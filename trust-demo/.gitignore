@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+preview-desktop.png
+preview-mobile.png
+# Local attempts remain on disk; preserve only the genuine reviewed round here.
+ai-reviews/*/
+!ai-reviews/ai-20261115T003045Z-238263583d55/
+# Required command evidence is deliberately versioned, despite the repo log rule.
+!runs/**/commands/*.log

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="da10ba18-2266-44e4-92ea-0c8224c23a60" name="@test-host 2026-11-14 23:18:12" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-14T23:18:12.7280620+02:00" queuing="2026-11-14T23:18:12.7280620+02:00" start="2026-11-14T23:18:11.0127210+02:00" finish="2026-11-14T23:18:12.7755370+02:00" />
+  <TestSettings name="default" id="af4f4315-1bdd-4fdd-96b3-d64a8dad36d1">
+    <Deployment runDeploymentRoot="_test-host_2026-11-14_23_18_12" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="697cc61c-1d6e-4bc4-b744-4d959c227f09" testId="8527b8ea-ecf0-85af-98f3-5bc4ca4f23cf" testName="GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference" computerName="test-host" duration="00:00:01.3429312" startTime="2026-11-14T23:18:12.6728010+02:00" endTime="2026-11-14T23:18:12.6728100+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="697cc61c-1d6e-4bc4-b744-4d959c227f09" />
+    <UnitTestResult executionId="97c123d7-54e3-4f0b-9c57-0065d91b5d4a" testId="b694f0a3-8dc5-a132-e12d-6c27c41a2747" testName="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember" computerName="test-host" duration="00:00:00.0352030" startTime="2026-11-14T23:18:12.7084060+02:00" endTime="2026-11-14T23:18:12.7084060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97c123d7-54e3-4f0b-9c57-0065d91b5d4a" />
+    <UnitTestResult executionId="c0f2195d-635c-4d85-af59-7b57b2a51b92" testId="72ce772e-5a12-efe7-339f-c3e3bb25051e" testName="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference" computerName="test-host" duration="00:00:00.0382789" startTime="2026-11-14T23:18:12.7468460+02:00" endTime="2026-11-14T23:18:12.7468460+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0f2195d-635c-4d85-af59-7b57b2a51b92" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference" storage="/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/t/earned-trust-2283-4re5roli/head/bin/messagepack.sourcegenerator.tests/debug/net8.0/messagepack.sourcegenerator.tests.dll" id="8527b8ea-ecf0-85af-98f3-5bc4ca4f23cf">
+      <Execution id="697cc61c-1d6e-4bc4-b744-4d959c227f09" />
+      <TestMethod codeBase="/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/head/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenericsFormatterTests" name="ClosedGenericRecordStruct_FromMetadataReference" />
+    </UnitTest>
+    <UnitTest name="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember" storage="/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/t/earned-trust-2283-4re5roli/head/bin/messagepack.sourcegenerator.tests/debug/net8.0/messagepack.sourcegenerator.tests.dll" id="b694f0a3-8dc5-a132-e12d-6c27c41a2747">
+      <Execution id="97c123d7-54e3-4f0b-9c57-0065d91b5d4a" />
+      <TestMethod codeBase="/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/head/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenericsFormatterTests" name="ClosedGenericStruct_FromMetadataReference_UnkeyedMember" />
+    </UnitTest>
+    <UnitTest name="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference" storage="/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/t/earned-trust-2283-4re5roli/head/bin/messagepack.sourcegenerator.tests/debug/net8.0/messagepack.sourcegenerator.tests.dll" id="72ce772e-5a12-efe7-339f-c3e3bb25051e">
+      <Execution id="c0f2195d-635c-4d85-af59-7b57b2a51b92" />
+      <TestMethod codeBase="/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/head/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenericsFormatterTests" name="ClosedGenericStruct_FromMetadataReference" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8527b8ea-ecf0-85af-98f3-5bc4ca4f23cf" executionId="697cc61c-1d6e-4bc4-b744-4d959c227f09" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b694f0a3-8dc5-a132-e12d-6c27c41a2747" executionId="97c123d7-54e3-4f0b-9c57-0065d91b5d4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72ce772e-5a12-efe7-339f-c3e3bb25051e" executionId="c0f2195d-635c-4d85-af59-7b57b2a51b92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.34)
+[xUnit.net 00:00:00.04]   Discovering: MessagePack.SourceGenerator.Tests
+[xUnit.net 00:00:00.07]   Discovered:  MessagePack.SourceGenerator.Tests
+[xUnit.net 00:00:00.07]   Starting:    MessagePack.SourceGenerator.Tests
+[xUnit.net 00:00:01.51]   Finished:    MessagePack.SourceGenerator.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

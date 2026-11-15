@@ -1,0 +1,16 @@
+PASS: DESIGN desktop decision sidebar, semantic four-column table, mobile decision after content
+PASS: DESIGN keyboard Tab focus and Enter disclosure activation
+PASS: DESIGN primary, secondary, link, finding and passed-result colors meet 4.5:1 on white
+PASS: DESIGN reduced-motion mode has no feedback animation
+PASS: DESIGN acceptance requires explicit residual-risk acknowledgement and restores it
+PASS: initial pending state; criteria, recorded runs, finding and limits rendered
+PASS: all 11 evidence links return 200; unrelated files are not served
+PASS: criterion-to-run navigation opens recorded evidence
+PASS: save/read-back, full SHA/version binding and reload persistence
+PASS: actual downloaded JSON matches the saved decision; unsaved edits are excluded
+PASS: a different review version does not inherit a decision
+PASS: stale SHA binding is rejected; status remains pending
+PASS: mobile layout without horizontal overflow
+PASS: storage denial cannot become a saved decision
+PASS: malformed report fails closed
+All Chrome browser checks passed. Disposable test decisions are not human approvals.

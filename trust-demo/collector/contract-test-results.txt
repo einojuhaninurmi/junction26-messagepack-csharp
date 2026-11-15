@@ -1,0 +1,12 @@
+test_failure_is_not_a_pass (__main__.CollectorTests.test_failure_is_not_a_pass) ... ok
+test_missing_executed_test_is_rejected (__main__.CollectorTests.test_missing_executed_test_is_rejected) ... ok
+test_missing_probe_case_is_rejected (__main__.CollectorTests.test_missing_probe_case_is_rejected) ... ok
+test_non_reproducing_finding_is_explicit (__main__.CollectorTests.test_non_reproducing_finding_is_explicit) ... ok
+test_real_run_same_inputs_and_exact_tests (__main__.CollectorTests.test_real_run_same_inputs_and_exact_tests) ... ok
+test_skipped_test_is_not_a_pass (__main__.CollectorTests.test_skipped_test_is_not_a_pass) ... ok
+test_two_real_runs_repeat_the_same_observations (__main__.CollectorTests.test_two_real_runs_repeat_the_same_observations) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.068s
+
+OK

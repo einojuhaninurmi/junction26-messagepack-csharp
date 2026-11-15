@@ -1,0 +1,178 @@
+{
+  "type": "object",
+  "properties": {
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "met",
+              "partially_met",
+              "not_met",
+              "unverified"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 12000
+            },
+            "maxItems": 100
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "status",
+          "rationale",
+          "evidenceIds"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100,
+      "minItems": 1
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "high",
+              "medium",
+              "low",
+              "info"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "revision": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                },
+                "path": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 12000
+                },
+                "lineStart": {
+                  "type": "integer"
+                },
+                "lineEnd": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "revision",
+                "path",
+                "lineStart",
+                "lineEnd"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 100,
+            "minItems": 1
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 12000
+            },
+            "maxItems": 100,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "id",
+          "severity",
+          "title",
+          "explanation",
+          "references",
+          "evidenceIds"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 100
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 12000
+      },
+      "maxItems": 100
+    },
+    "unchecked": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 12000
+      },
+      "maxItems": 100
+    },
+    "humanQuestions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 12000
+      },
+      "maxItems": 100
+    }
+  },
+  "required": [
+    "requirements",
+    "findings",
+    "uncertainties",
+    "unchecked",
+    "humanQuestions"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

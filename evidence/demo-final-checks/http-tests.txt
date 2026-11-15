@@ -1,0 +1,13 @@
+test_anthropic_preflight_and_single_generation_require_same_quote (__main__.HTTPTests.test_anthropic_preflight_and_single_generation_require_same_quote) ... ok
+test_configuration_never_exposes_key (__main__.HTTPTests.test_configuration_never_exposes_key) ... ok
+test_cross_origin_rejected_before_provider (__main__.HTTPTests.test_cross_origin_rejected_before_provider) ... ok
+test_missing_configuration_is_not_a_successful_review (__main__.HTTPTests.test_missing_configuration_is_not_a_successful_review) ... ok
+test_preflight_exposes_safe_category_and_numeric_metadata_only (__main__.HTTPTests.test_preflight_exposes_safe_category_and_numeric_metadata_only) ... ok
+test_prompt_or_key_in_request_rejected (__main__.HTTPTests.test_prompt_or_key_in_request_rejected) ... ok
+test_server_side_test_double_response_and_snapshot (__main__.HTTPTests.test_server_side_test_double_response_and_snapshot) ... ok
+test_service_and_invalid_response_errors_visible (__main__.HTTPTests.test_service_and_invalid_response_errors_visible) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 5.498s
+
+OK

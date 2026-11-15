@@ -1,0 +1,25 @@
+
+  Determining projects to restore...
+/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj : warning NU1901: Package 'NuGet.Protocol' 6.8.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+  Restored /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/src/MessagePack.SourceGenerator/MessagePack.SourceGenerator.csproj (in 198 ms).
+  Restored /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/src/MessagePack.Analyzers.CodeFixes/MessagePack.Analyzers.CodeFixes.csproj (in 198 ms).
+  Restored /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/src/MessagePack.Annotations/MessagePack.Annotations.csproj (in 185 ms).
+  Restored /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/src/MessagePack.Analyzers/MessagePack.Analyzers.csproj (in 200 ms).
+  Restored /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/src/MessagePack/MessagePack.csproj (in 203 ms).
+  Restored /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj (in 357 ms).
+/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj : warning NU1901: Package 'NuGet.Protocol' 6.8.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+  MessagePack.SourceGenerator -> /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/bin/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.dll
+  MessagePack.Analyzers.CodeFixes -> /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/bin/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.dll
+  MessagePack.Analyzers -> /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/bin/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.dll
+  MessagePack.Annotations -> /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/bin/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.dll
+  MessagePack -> /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/bin/MessagePack/Debug/net8.0/MessagePack.dll
+  MessagePack.SourceGenerator.Tests -> /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll
+
+Build succeeded.
+
+/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj : warning NU1901: Package 'NuGet.Protocol' 6.8.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+/private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj : warning NU1901: Package 'NuGet.Protocol' 6.8.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:12.20

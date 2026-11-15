@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "reviewVersion": "2283-review-1",
+  "issue": 2283,
+  "title": "A resolver should never disappear silently.",
+  "recordedOn": "2026-11-14",
+  "source": {
+    "url": "https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2283",
+    "label": "MessagePack-CSharp \u00b7 Issue #2283",
+    "requirement": "A closed generic value type from a referenced assembly must not crash the generator or analyzer. The consumer must build with a generated resolver.",
+    "originalEnvironment": "MessagePack 3.1.8 \u00b7 SDK 10.0.204 \u00b7 Windows 11 (not reproduced in that environment)"
+  },
+  "change": {
+    "base": "32258fdbee4bcd653c79f51b4376b5103c6f4d27",
+    "head": "9df83c38409c8bfad0517aebffe48211eda4a5b4",
+    "summary": "Use safe syntax-location lookups and report TypeCollector diagnostics only when their location belongs to the active compilation. Add three metadata regression tests and documentation.",
+    "scope": [
+      "src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs",
+      "tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs",
+      "README.md",
+      "doc/analyzers/MsgPack004.md"
+    ],
+    "excluded": "The uncommitted IsAnalyzerProject Roslyn 4.12.0 \u2192 4.11.0 setup correction is outside the evaluated commit diff."
+  },
+  "criteria": [
+    {
+      "id": "AC1",
+      "title": "No metadata-symbol crashes",
+      "origin": "Issue requirement",
+      "assessment": "Demonstrated for the three tested generic metadata cases.",
+      "tests": [
+        "base-targeted",
+        "head-targeted"
+      ],
+      "detail": "ClosedGenericStruct_FromMetadataReference; ClosedGenericRecordStruct_FromMetadataReference; ClosedGenericStruct_FromMetadataReference_UnkeyedMember."
+    },
+    {
+      "id": "AC2",
+      "title": "Consumer resolver is generated",
+      "origin": "Issue requirement",
+      "assessment": "Demonstrated, including the inline example without an explicit resolver attribute.",
+      "tests": [
+        "head-targeted",
+        "head-probe"
+      ],
+      "detail": "Tests assert resolver hint names; the independent probe reports MessagePack.GeneratedMessagePackResolver.g.cs."
+    },
+    {
+      "id": "AC3",
+      "title": "Generated output compiles",
+      "origin": "Issue-derived verification",
+      "assessment": "Demonstrated by compilation and emit of generated library and consumer output.",
+      "tests": [
+        "head-probe",
+        "full-suite"
+      ],
+      "detail": "The probe reports EMIT True. Artifact presence alone would not establish this."
+    },
+    {
+      "id": "AC4",
+      "title": "Preserve source diagnostics",
+      "origin": "Review-derived regression criterion",
+      "assessment": "Gap confirmed for a positional record null key. General preservation is not established.",
+      "tests": [
+        "head-probe",
+        "base-probe"
+      ],
+      "detail": "Ordinary property: MsgPack005. Positional record property: no MsgPack005. The base instead throws InvalidCastException; this is not a regression from previously correct behavior."
+    }
+  ],
+  "runs": [
+    {
+      "id": "base-targeted",
+      "label": "Base \u00b7 targeted regression control",
+      "result": "3 failed / 0 passed",
+      "environment": "Base production code + head test file + Roslyn setup correction, isolated temporary tree",
+      "artifacts": [
+        "base-log"
+      ],
+      "meaning": "AD0001 and CS8785 with IndexOutOfRangeException. This is a controlled overlay, not an untouched-base build."
+    },
+    {
+      "id": "head-targeted",
+      "label": "Head \u00b7 targeted regression tests",
+      "result": "3 passed / 0 failed",
+      "environment": "SDK 8.0.428 \u00b7 macOS arm64 \u00b7 Roslyn setup correction applied",
+      "artifacts": [
+        "head-log"
+      ],
+      "meaning": "All three added metadata regressions pass."
+    },
+    {
+      "id": "head-probe",
+      "label": "Head \u00b7 independent Roslyn probe",
+      "result": "Harness exit 0; observations recorded",
+      "environment": "Head generator built with Roslyn setup correction; C# 12 probe",
+      "artifacts": [
+        "probe-log",
+        "probe-source"
+      ],
+      "meaning": "Generated library and implicit-resolver consumer emit successfully. Source controls expose the missing MsgPack005."
+    },
+    {
+      "id": "base-probe",
+      "label": "Base \u00b7 independent probe control",
+      "result": "Harness exit 0; observed analyzer/generator failures",
+      "environment": "Same probe using base generator built with Roslyn setup correction",
+      "artifacts": [
+        "base-probe-log"
+      ],
+      "meaning": "Harness completion is not a passing product test. Metadata example crashes; positional null key throws AD0001 / InvalidCastException."
+    },
+    {
+      "id": "full-suite",
+      "label": "Head \u00b7 full Mac-supported solution suite",
+      "result": "1,592 passed \u00b7 6 skipped \u00b7 0 failed",
+      "environment": "8 net8.0 test projects \u00b7 SDK 8.0.428 \u00b7 Roslyn setup correction applied",
+      "artifacts": [
+        "suite-log",
+        "build-log"
+      ],
+      "meaning": "Clean Debug solution build: 0 errors, 2 NU1901 warnings. Includes 170 generator/code-fix tests. Passing tests do not establish every requirement."
+    },
+    {
+      "id": "original-build",
+      "label": "Original head \u00b7 unchanged setup",
+      "result": "Build failed \u00b7 15 errors \u00b7 5 warnings",
+      "environment": "SDK 8.0.428 \u00b7 before Roslyn correction",
+      "artifacts": [
+        "original-log"
+      ],
+      "meaning": "CS9057 prevents generator use. The original branch does not build unchanged in this environment."
+    }
+  ],
+  "finding": {
+    "id": "F1",
+    "title": "A positional record null key loses its diagnostic",
+    "status": "Confirmed diagnostic gap",
+    "example": "[MessagePackObject]\npublic partial record struct Sample(\n    [property: Key((string)null)] int Value);",
+    "head": "No MsgPack005 is reported; generated output emits successfully.",
+    "base": "AD0001 / InvalidCastException. The old behavior was already broken.",
+    "control": "The same null key on an ordinary property reports MsgPack005. An unkeyed source-property control reports MsgPack004.",
+    "cause": "The new helper accepts PropertyDeclarationSyntax only. A positional record property points to ParameterSyntax, so its null location is dropped by the diagnostic filter.",
+    "references": [
+      {
+        "label": "TypeCollector.cs:985",
+        "url": "https://github.com/einojuhaninurmi/junction26-messagepack-csharp/blob/9df83c38409c8bfad0517aebffe48211eda4a5b4/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs#L985"
+      },
+      {
+        "label": "TypeCollector.cs:1434\u20131446",
+        "url": "https://github.com/einojuhaninurmi/junction26-messagepack-csharp/blob/9df83c38409c8bfad0517aebffe48211eda4a5b4/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs#L1434"
+      }
+    ],
+    "artifacts": [
+      "probe-log",
+      "base-probe-log",
+      "probe-source"
+    ]
+  },
+  "limits": [
+    {
+      "title": "Separate setup correction",
+      "detail": "All successful head results shown here used the conditional Roslyn 4.11.0 correction. They do not prove the original branch builds unchanged.",
+      "kind": "Environment qualification"
+    },
+    {
+      "title": "Existing omissions",
+      "detail": "6 tests were skipped. The runner also reported three duplicate-ID omissions. Neither group supplies evidence of passing behavior.",
+      "kind": "Coverage limit"
+    },
+    {
+      "title": "Runtime round-trip",
+      "detail": "The exact issue example was not serialized and deserialized at runtime. Successful emit is narrower evidence.",
+      "kind": "Missing evidence"
+    },
+    {
+      "title": "Windows and NativeAOT",
+      "detail": "The original Windows/SDK environment and NativeAOT publishing were not tested. Also unverified: Release, Linux, Unity/IL2CPP, packaging and wire-format comparisons.",
+      "kind": "Missing evidence"
+    },
+    {
+      "title": "Original logs",
+      "detail": "The user-reported 7-warning build log is missing. Available original build log has 5 warnings. No original full-solution test run is available.",
+      "kind": "Missing evidence"
+    },
+    {
+      "title": "Metadata diagnostic policy",
+      "detail": "Documentation assumes diagnostics are reported in the defining project, but precompiled libraries may have been built without analyzers. This is a design concern, not a demonstrated runtime vulnerability.",
+      "kind": "Human judgment"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "report",
+      "label": "Full recorded review",
+      "path": "evidence/review-2283.md"
+    },
+    {
+      "id": "setup",
+      "label": "Setup evidence and commands",
+      "path": "evidence/setup/README.md"
+    },
+    {
+      "id": "diff",
+      "label": "Frozen evaluated diff",
+      "path": "evidence/review-2283/evaluated.patch"
+    },
+    {
+      "id": "base-log",
+      "label": "Base targeted log",
+      "path": "evidence/review-2283/base-targeted.log"
+    },
+    {
+      "id": "head-log",
+      "label": "Head targeted log",
+      "path": "evidence/review-2283/head-targeted.log"
+    },
+    {
+      "id": "probe-log",
+      "label": "Head probe observations",
+      "path": "evidence/review-2283/probe.log"
+    },
+    {
+      "id": "base-probe-log",
+      "label": "Base probe observations",
+      "path": "evidence/review-2283/base-probe.log"
+    },
+    {
+      "id": "probe-source",
+      "label": "Independent probe source",
+      "path": "evidence/review-2283/Probe.cs"
+    },
+    {
+      "id": "suite-log",
+      "label": "Full Mac test log",
+      "path": "evidence/setup/new/test.log"
+    },
+    {
+      "id": "build-log",
+      "label": "Clean solution build log",
+      "path": "evidence/setup/new/build.log"
+    },
+    {
+      "id": "original-log",
+      "label": "Unchanged-head build log",
+      "path": "evidence/setup/original/build.log"
+    },
+    {
+      "id": "human-decision",
+      "label": "Recorded human request for changes (self-declared identity)",
+      "path": "evidence/decisions/issue-2283-request-changes.json"
+    }
+  ],
+  "concept": {
+    "title": "Evidence earns attention. People own the decision.",
+    "body": "A risk-based review starts with the requirement, probes failure modes and records what the evidence cannot establish. AI can organize observations and abstain from a verdict; a human chooses whether the remaining risk is acceptable.",
+    "boundaries": [
+      "Recorded review, not a live reviewer.",
+      "No confidence percentage or automatic approval.",
+      "A typed name is a self-declared label, not verified identity or GitHub approval."
+    ]
+  },
+  "lessons": [
+    {
+      "title": "A green subset can conceal a broken build",
+      "detail": "The original limited tests passed while the solution had 15 build errors. Inspect scope before interpreting a result."
+    },
+    {
+      "title": "A clean build can conceal a missing resolver",
+      "detail": "The base probe can emit an assembly despite generator failure. Check the required artifact, not only the exit code."
+    },
+    {
+      "title": "A crash fix can leave a silent gap",
+      "detail": "The positional null-key case no longer crashes, but its diagnostic is missing. This does not establish a newly introduced regression."
+    },
+    {
+      "title": "Traceability can fail too",
+      "detail": "Stale reports, decisions bound to the wrong commits, unverified names and treating missing coverage as success are known failure modes. Keep the review version and SHA binding visible."
+    },
+    {
+      "title": "Check the responsible-person field",
+      "detail": "During the first genuine review round, a review ID was accidentally entered as the responsible person, then corrected to the human name. The corrected name is still self-declared, not verified identity or GitHub approval. This is a user-reported interaction observation, not a captured event log."
+    }
+  ]
+}

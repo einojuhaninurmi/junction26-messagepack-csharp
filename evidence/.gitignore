@@ -1,0 +1,2 @@
+# Audit logs are evidence, not build outputs.
+!*.log

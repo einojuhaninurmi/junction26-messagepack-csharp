@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-15T00:47:25.788394+00:00",
+  "decisionBinding": "verified against saved genuine review and evidence run",
+  "genuineInputAndInstructionsHashes": "verified unchanged",
+  "decision": "request_changes",
+  "newModelCalls": 0,
+  "checks": {
+    "data": 5,
+    "collector": 7,
+    "ai": 19,
+    "adapter": 22,
+    "http": 8,
+    "browserGroups": 22
+  },
+  "unitAndHTTPProviderCalls": "test doubles only",
+  "browserServer": "isolated port 2284; API key/provider/model unset",
+  "noNewMessagePackBuildOrTestExecution": true,
+  "preCommitAudit": {
+    "credentialPatternFlags": 0,
+    "buildCacheTemporaryFiles": 0,
+    "evidenceByteMismatchesBetweenIndexAndWorktree": 0,
+    "artifactChecksumMismatches": 0,
+    "allSavedRunAndReportArtifactsStaged": true,
+    "identity": "supplied name retained in exact decision only; self-declared"
+  }
+}

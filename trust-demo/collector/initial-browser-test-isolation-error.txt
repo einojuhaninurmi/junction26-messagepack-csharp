@@ -1,0 +1,19 @@
+PASS: DESIGN desktop decision sidebar, semantic four-column table, mobile decision after content
+PASS: DESIGN keyboard Tab focus and Enter disclosure activation
+PASS: DESIGN primary, secondary, link, finding and passed-result colors meet 4.5:1 on white
+PASS: DESIGN reduced-motion mode has no feedback animation
+PASS: DESIGN acceptance requires explicit residual-risk acknowledgement and restores it
+PASS: initial pending state; criteria, recorded runs, finding and limits rendered
+PASS: all 11 evidence links return 200; unrelated files are not served
+PASS: criterion-to-run navigation opens recorded evidence
+PASS: save/read-back, full SHA/version binding and reload persistence
+PASS: actual downloaded JSON matches the saved decision; unsaved edits are excluded
+PASS: COLLECTOR successful/blocked reports displayed; old decision never inherited; new run decision saves and restores independently
+PASS: COLLECTOR every actual command log is accessible
+PASS: COLLECTOR simulated contradiction is explicit; missing requested report cannot inherit a decision
+PASS: a different review version does not inherit a decision
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_chrome.py", line 236, in <module>
+    assert cdp.evaluate("document.getElementById('decision-status').textContent === 'Pending human review' && document.getElementById('export').disabled && document.getElementById('decision-message').textContent.includes('invalid')")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,14 @@
+
+Test run for /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-gqzi2ma3/head/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.2 (arm64)
+
+The following Tests are available:
+    GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference
+    GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference
+    GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.65

@@ -1,0 +1,8 @@
+{
+  "issue": 2283,
+  "sourceUrl": "https://github.com/MessagePack-CSharp/MessagePack-CSharp/issues/2283",
+  "accessedOn": "2026-11-14",
+  "expectedBehaviorExcerpt": "A clean build, with a generated resolver in app.",
+  "reportedProblem": "The issue reports generator and analyzer exceptions for a closed generic value-type member defined in a referenced assembly; the consumer is missing its generated resolver.",
+  "provenance": "Expected behavior transcribed from the original issue, not from the prior AI review. Problem conditions paraphrased from that issue. Original environment: MessagePack 3.1.8, SDK 10.0.204, Windows 11."
+}

@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "kind": "issue-2283-ai-review",
+  "reviewId": "ai-20261115T003045Z-238263583d55",
+  "reviewVersion": "ai-20261115T003045Z-238263583d55",
+  "evidenceRunId": "20261114T211745Z-9e9c520a",
+  "base": "32258fdbee4bcd653c79f51b4376b5103c6f4d27",
+  "head": "9df83c38409c8bfad0517aebffe48211eda4a5b4",
+  "startedAt": "2026-11-15T00:30:45.174048+00:00",
+  "finishedAt": "2026-11-15T00:31:00.994249+00:00",
+  "status": "completed",
+  "service": "anthropic",
+  "model": "claude-sonnet-5-5",
+  "inputSha256": "a18af822306fc04605c951a29458020e16ff3530adc77d1660f3b4c1512eef1a",
+  "instructionsSha256": "5a3f7d62369b89ec856d27d927eaf07e7e9e1255967a37c1591387a53bfd28d0",
+  "responseSchemaSha256": "f6a19aa7eec4d9a5677f8c7aaf169fea53b9df7446c55225d8522dcc845ff078",
+  "evidenceAssisted": true,
+  "blindTest": false,
+  "requestedService": "anthropic",
+  "requestedModel": "claude-sonnet-5-5",
+  "preflight": {
+    "service": "anthropic",
+    "requestedModel": "claude-sonnet-5-5",
+    "resolvedModel": "claude-sonnet-5-5",
+    "apiVersion": "2026-10-21",
+    "inputTokens": 209487,
+    "contextCapacity": 1000000,
+    "maxOutputTokens": 8192,
+    "safetyMarginTokens": 4096,
+    "estimatedUSDWithMaxOutput": 0.500894,
+    "estimatedUSDWithMargin": 0.509086,
+    "estimateLimitUSD": 1.0,
+    "ratesUSDPerMillion": {
+      "input": 2.0,
+      "output": 10.0
+    },
+    "pricingCheckedOn": "2026-11-15",
+    "modelRequestId": "req_011Ch3mcu6F2JVymvkisnxYU",
+    "countRequestId": "req_011Ch3mcvrQqSmYtRnaJbMKd",
+    "note": "Token-count estimate, not an invoice. No generation yet. Output reservation includes thinking. No caching, batch or fast-mode request.",
+    "quoteId": "quote-d5b934bd66884c25a1d2c6f7c70669cc",
+    "evidenceRunId": "20261114T211745Z-9e9c520a",
+    "inputSha256": "a18af822306fc04605c951a29458020e16ff3530adc77d1660f3b4c1512eef1a",
+    "instructionsSha256": "5a3f7d62369b89ec856d27d927eaf07e7e9e1255967a37c1591387a53bfd28d0",
+    "createdAt": "2026-11-15T00:30:39.616134+00:00",
+    "expiresInSeconds": 600,
+    "generationSent": false
+  },
+  "providerMetadata": {
+    "model": "claude-sonnet-5-5",
+    "requestId": "req_011Ch3mdNodAeszab4sQndUq",
+    "messageId": "msg_011Ch3mdPbFdSCbZBSNM6HyX",
+    "usage": {
+      "input_tokens": 209487,
+      "output_tokens": 1438,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "inference_geo": "global",
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    "stopReason": "end_turn",
+    "actualCostEstimateUSD": 0.433354
+  },
+  "providerRequestId": "req_011Ch3mdNodAeszab4sQndUq",
+  "result": {
+    "requirements": [
+      {
+        "id": "R1",
+        "title": "Closed generic value type from referenced assembly no longer crashes analyzer/generator; clean build",
+        "status": "met",
+        "rationale": "Base probe shows AD0001 and CS8785 with IndexOutOfRangeException at TypeCollector.cs line 1075 for the issue repro. Head probe shows no diagnostics and the Cmd and Item formatters are generated. The three targeted tests fail on base and pass on head. The fix uses FirstOrDefault()?.GetSyntax(), which tolerates metadata symbols with no syntax.",
+        "evidenceIds": [
+          "observations",
+          "command:16-base-probe",
+          "command:28-head-probe",
+          "command:14-base-regressions",
+          "command:26-head-regressions"
+        ]
+      },
+      {
+        "id": "R2",
+        "title": "Consumer app gets a generated resolver",
+        "status": "met",
+        "rationale": "Head probe generates MessagePack.GeneratedMessagePackResolver.g.cs and the Cmd formatter. The test helper asserts that the expected resolver hint name is generated and that the generator emits no warnings.",
+        "evidenceIds": [
+          "observations",
+          "harness:GenericsFormatterTests.cs"
+        ]
+      },
+      {
+        "id": "R3",
+        "title": "No regression for in-source diagnostics",
+        "status": "partially_met",
+        "rationale": "The source-unkeyed (MsgPack004) and null-key property (MsgPack005) probes behave the same on base and head. Only these two cases were checked, and the new location filter wraps every analyzer diagnostic. The full test suite was not run.",
+        "evidenceIds": [
+          "observations"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "severity": "info",
+        "title": "Pre-existing InvalidCastException for positional-record null key also fixed",
+        "explanation": "On base, a positional record struct with a null key throws InvalidCastException at the unconditional (PropertyDeclarationSyntax) cast. On head, the probe reports no analyzer exception, but it also reports no MsgPack005 diagnostic. The cast is now null-safe through GetPropertyIdentifierLocation, so the diagnostic is dropped because it has no location. This is a pre-existing crash, not a regression, but the diagnostic is silently lost.",
+        "references": [
+          {
+            "revision": "head",
+            "path": "src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs",
+            "lineStart": 983,
+            "lineEnd": 986
+          }
+        ],
+        "evidenceIds": [
+          "command:16-base-probe",
+          "command:28-head-probe"
+        ]
+      },
+      {
+        "id": "F2",
+        "severity": "low",
+        "title": "Diagnostics with no source location are dropped for all analyzer reports",
+        "explanation": "ReportIfLocatedInCompilation drops any diagnostic whose location is not in source or not in this compilation. That includes diagnostics created with a null location, which previously would have been reported as location-less. Examples are the positional-record MsgPack005 case and cases where DeclaringSyntaxReferences is empty. The filter is broad and its effect on other analyzer paths is untested. Suppressing a diagnostic about a type in a referenced assembly is intended behavior.",
+        "references": [
+          {
+            "revision": "head",
+            "path": "src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs",
+            "lineStart": 1444,
+            "lineEnd": 1450
+          }
+        ],
+        "evidenceIds": [
+          "command:28-head-probe"
+        ]
+      }
+    ],
+    "uncertainties": [
+      "Behavior under the original environment (MessagePack 3.1.8, SDK 10, Windows) was not reproduced.",
+      "Other unguarded DeclaringSyntaxReferences[0] or GetSyntax casts remain, for example the BaseTypeDeclarationSyntax cast for inherited members; whether metadata types can reach them was not tested."
+    ],
+    "unchecked": [
+      "Full solution test suite",
+      "NativeAOT and Windows runs",
+      "Runtime serialization round-trip of the Item<int> member",
+      "Roslyn 4.12 build; the evidence uses an IsAnalyzerProject correction to 4.11.0"
+    ],
+    "humanQuestions": [
+      "Is silently dropping diagnostics that have no source location (such as MsgPack005 on positional-record properties) acceptable, or should a fallback location such as the type identifier be used?",
+      "Are the README and MsgPack004 doc additions the desired place to document that diagnostics for referenced-assembly types are reported by the defining assembly?"
+    ]
+  },
+  "referenceChecks": [
+    {
+      "owner": "R1",
+      "kind": "evidence",
+      "reference": "observations",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R1",
+      "kind": "evidence",
+      "reference": "command:16-base-probe",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R1",
+      "kind": "evidence",
+      "reference": "command:28-head-probe",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R1",
+      "kind": "evidence",
+      "reference": "command:14-base-regressions",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R1",
+      "kind": "evidence",
+      "reference": "command:26-head-regressions",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R2",
+      "kind": "evidence",
+      "reference": "observations",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R2",
+      "kind": "evidence",
+      "reference": "harness:GenericsFormatterTests.cs",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "R3",
+      "kind": "evidence",
+      "reference": "observations",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "F1",
+      "kind": "evidence",
+      "reference": "command:16-base-probe",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "F1",
+      "kind": "evidence",
+      "reference": "command:28-head-probe",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "F1",
+      "kind": "source",
+      "reference": {
+        "revision": "head",
+        "path": "src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs",
+        "lineStart": 983,
+        "lineEnd": 986
+      },
+      "status": "exists",
+      "explanation": "File and line range exist at the pinned commit; claim correctness is not verified."
+    },
+    {
+      "owner": "F2",
+      "kind": "evidence",
+      "reference": "command:28-head-probe",
+      "status": "exists",
+      "explanation": "Identifier exists in supplied material; claim correctness is not verified."
+    },
+    {
+      "owner": "F2",
+      "kind": "source",
+      "reference": {
+        "revision": "head",
+        "path": "src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs",
+        "lineStart": 1444,
+        "lineEnd": 1450
+      },
+      "status": "exists",
+      "explanation": "File and line range exist at the pinned commit; claim correctness is not verified."
+    }
+  ]
+}

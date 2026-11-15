@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="fa1e3211-f85f-45ac-8b1a-132b4286450e" name="@test-host 2026-11-14 22:31:13" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-14T22:31:13.0274520+02:00" queuing="2026-11-14T22:31:13.0274520+02:00" start="2026-11-14T22:31:11.2967320+02:00" finish="2026-11-14T22:31:13.0362680+02:00" />
+  <TestSettings name="default" id="0d18e61a-9241-41dd-93cf-aca55cd888da">
+    <Deployment runDeploymentRoot="_test-host_2026-11-14_22_31_13" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="532c53a2-6d81-4686-bb32-056481634530" testId="b694f0a3-8dc5-a132-e12d-6c27c41a2747" testName="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember" computerName="test-host" duration="00:00:00.0305521" startTime="2026-11-14T22:31:12.9713030+02:00" endTime="2026-11-14T22:31:12.9713030+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="532c53a2-6d81-4686-bb32-056481634530">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Mismatch between number of diagnostics returned, expected "0" actual "3"&#xD;
+&#xD;
+Diagnostics:&#xD;
+// error AD0001: Analyzer 'MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer' threw an exception of type 'System.IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+Exception occurred with following context:&#xD;
+Compilation: TestProject
+ISymbol: MyObject (NamedType)
+
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018
+DiagnosticResult.CompilerError("AD0001").WithArguments("MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer", "System.IndexOutOfRangeException", "Index was outside the bounds of the array.", "Exception occurred with following context:&#xD;
+Compilation: TestProject
+ISymbol: MyObject (NamedType)
+
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018"),
+// warning CS8785: Generator 'MessagePackGenerator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+   at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+   at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+-----
+
+DiagnosticResult.CompilerWarning("CS8785").WithArguments("MessagePackGenerator", "IndexOutOfRangeException", "Index was outside the bounds of the array.", "System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+   at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+   at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+-----
+"),
+// error MsgPack004: Properties and fields of MessagePackObject-attributed types require either KeyAttribute or IgnoreMemberAttribute: global::TempProject.MyGenericStruct&lt;int&gt;.Unkeyed
+new DiagnosticResult(MsgPack00xMessagePackAnalyzer.MsgPack004).WithArguments("global::TempProject.MyGenericStruct&lt;int&gt;", "Unkeyed"),
+&#xD;
+</Message>
+          <StackTrace>   at Microsoft.CodeAnalysis.Testing.DefaultVerifier.Equal[T](T expected, T actual, String message) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/DefaultVerifier.cs:line 79
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticResults(IEnumerable`1 actualResults, ImmutableArray`1 analyzers, DiagnosticResult[] expectedResults, IVerifier verifier) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 546
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticsAsync(EvaluatedProjectState primaryProject, ImmutableArray`1 additionalProjects, DiagnosticResult[] expected, IVerifier verifier, CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 449
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunImplAsync(CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 203
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunAsync(CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 172
+   at GenericsFormatterTests.RunWithMetadataReferenceAsync(String defineSource, String usageSource, String expectedResolverHintName, LanguageVersion languageVersion) in /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs:line 648
+   at GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember() in /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs:line 625
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8052f140-0256-42c2-92c2-f13d7d2c2cfb" testId="72ce772e-5a12-efe7-339f-c3e3bb25051e" testName="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference" computerName="test-host" duration="00:00:00.0185744" startTime="2026-11-14T22:31:12.9901500+02:00" endTime="2026-11-14T22:31:12.9901500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8052f140-0256-42c2-92c2-f13d7d2c2cfb">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Mismatch between number of diagnostics returned, expected "0" actual "2"&#xD;
+&#xD;
+Diagnostics:&#xD;
+// error AD0001: Analyzer 'MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer' threw an exception of type 'System.IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+Exception occurred with following context:&#xD;
+Compilation: TestProject
+ISymbol: MyObject (NamedType)
+
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018
+DiagnosticResult.CompilerError("AD0001").WithArguments("MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer", "System.IndexOutOfRangeException", "Index was outside the bounds of the array.", "Exception occurred with following context:&#xD;
+Compilation: TestProject
+ISymbol: MyObject (NamedType)
+
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018"),
+// warning CS8785: Generator 'MessagePackGenerator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+   at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+   at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+-----
+
+DiagnosticResult.CompilerWarning("CS8785").WithArguments("MessagePackGenerator", "IndexOutOfRangeException", "Index was outside the bounds of the array.", "System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+   at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+   at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+-----
+"),
+&#xD;
+</Message>
+          <StackTrace>   at Microsoft.CodeAnalysis.Testing.DefaultVerifier.Equal[T](T expected, T actual, String message) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/DefaultVerifier.cs:line 79
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticResults(IEnumerable`1 actualResults, ImmutableArray`1 analyzers, DiagnosticResult[] expectedResults, IVerifier verifier) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 546
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticsAsync(EvaluatedProjectState primaryProject, ImmutableArray`1 additionalProjects, DiagnosticResult[] expected, IVerifier verifier, CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 449
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunImplAsync(CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 203
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunAsync(CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 172
+   at GenericsFormatterTests.RunWithMetadataReferenceAsync(String defineSource, String usageSource, String expectedResolverHintName, LanguageVersion languageVersion) in /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs:line 648
+   at GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference() in /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs:line 540
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="90ae4f52-600a-4549-8ac2-72e64b5f8673" testId="8527b8ea-ecf0-85af-98f3-5bc4ca4f23cf" testName="GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference" computerName="test-host" duration="00:00:01.2764587" startTime="2026-11-14T22:31:12.9420010+02:00" endTime="2026-11-14T22:31:12.9420100+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90ae4f52-600a-4549-8ac2-72e64b5f8673">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Mismatch between number of diagnostics returned, expected "0" actual "2"&#xD;
+&#xD;
+Diagnostics:&#xD;
+// error AD0001: Analyzer 'MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer' threw an exception of type 'System.IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+Exception occurred with following context:&#xD;
+Compilation: TestProject
+ISymbol: Cmd (NamedType)
+
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018
+DiagnosticResult.CompilerError("AD0001").WithArguments("MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer", "System.IndexOutOfRangeException", "Index was outside the bounds of the array.", "Exception occurred with following context:&#xD;
+Compilation: TestProject
+ISymbol: Cmd (NamedType)
+
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+   at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+   at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+-----
+
+Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018"),
+// warning CS8785: Generator 'MessagePackGenerator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+   at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+   at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+-----
+
+DiagnosticResult.CompilerWarning("CS8785").WithArguments("MessagePackGenerator", "IndexOutOfRangeException", "Index was outside the bounds of the array.", "System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+   at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+   at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+   at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+   at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+-----
+"),
+&#xD;
+</Message>
+          <StackTrace>   at Microsoft.CodeAnalysis.Testing.DefaultVerifier.Equal[T](T expected, T actual, String message) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/DefaultVerifier.cs:line 79
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticResults(IEnumerable`1 actualResults, ImmutableArray`1 analyzers, DiagnosticResult[] expectedResults, IVerifier verifier) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 546
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticsAsync(EvaluatedProjectState primaryProject, ImmutableArray`1 additionalProjects, DiagnosticResult[] expected, IVerifier verifier, CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 449
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunImplAsync(CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 203
+   at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunAsync(CancellationToken cancellationToken) in /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs:line 172
+   at GenericsFormatterTests.RunWithMetadataReferenceAsync(String defineSource, String usageSource, String expectedResolverHintName, LanguageVersion languageVersion) in /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs:line 648
+   at GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference() in /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs:line 579
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference" storage="/private/tmp/ju26-review-2283-base/bin/messagepack.sourcegenerator.tests/debug/net8.0/messagepack.sourcegenerator.tests.dll" id="8527b8ea-ecf0-85af-98f3-5bc4ca4f23cf">
+      <Execution id="90ae4f52-600a-4549-8ac2-72e64b5f8673" />
+      <TestMethod codeBase="/private/tmp/ju26-review-2283-base/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenericsFormatterTests" name="ClosedGenericRecordStruct_FromMetadataReference" />
+    </UnitTest>
+    <UnitTest name="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember" storage="/private/tmp/ju26-review-2283-base/bin/messagepack.sourcegenerator.tests/debug/net8.0/messagepack.sourcegenerator.tests.dll" id="b694f0a3-8dc5-a132-e12d-6c27c41a2747">
+      <Execution id="532c53a2-6d81-4686-bb32-056481634530" />
+      <TestMethod codeBase="/private/tmp/ju26-review-2283-base/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenericsFormatterTests" name="ClosedGenericStruct_FromMetadataReference_UnkeyedMember" />
+    </UnitTest>
+    <UnitTest name="GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference" storage="/private/tmp/ju26-review-2283-base/bin/messagepack.sourcegenerator.tests/debug/net8.0/messagepack.sourcegenerator.tests.dll" id="72ce772e-5a12-efe7-339f-c3e3bb25051e">
+      <Execution id="8052f140-0256-42c2-92c2-f13d7d2c2cfb" />
+      <TestMethod codeBase="/private/tmp/ju26-review-2283-base/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GenericsFormatterTests" name="ClosedGenericStruct_FromMetadataReference" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b694f0a3-8dc5-a132-e12d-6c27c41a2747" executionId="532c53a2-6d81-4686-bb32-056481634530" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72ce772e-5a12-efe7-339f-c3e3bb25051e" executionId="8052f140-0256-42c2-92c2-f13d7d2c2cfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8527b8ea-ecf0-85af-98f3-5bc4ca4f23cf" executionId="90ae4f52-600a-4549-8ac2-72e64b5f8673" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="0" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.34)
+[xUnit.net 00:00:00.07]   Discovering: MessagePack.SourceGenerator.Tests
+[xUnit.net 00:00:00.10]   Discovered:  MessagePack.SourceGenerator.Tests
+[xUnit.net 00:00:00.10]   Starting:    MessagePack.SourceGenerator.Tests
+[xUnit.net 00:00:01.41]       System.InvalidOperationException : Mismatch between number of diagnostics returned, expected "0" actual "2"&#xD;
+[xUnit.net 00:00:01.41]       &#xD;
+[xUnit.net 00:00:01.41]       Diagnostics:&#xD;
+[xUnit.net 00:00:01.41]       // error AD0001: Analyzer 'MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer' threw an exception of type 'System.IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+[xUnit.net 00:00:01.41]       Exception occurred with following context:&#xD;
+[xUnit.net 00:00:01.41]       Compilation: TestProject
+[xUnit.net 00:00:01.41]       ISymbol: Cmd (NamedType)
+[xUnit.net 00:00:01.41]       
+[xUnit.net 00:00:01.41]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.41]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]       -----
+[xUnit.net 00:00:01.41]       
+[xUnit.net 00:00:01.41]       Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018
+[xUnit.net 00:00:01.41]       DiagnosticResult.CompilerError("AD0001").WithArguments("MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer", "System.IndexOutOfRangeException", "Index was outside the bounds of the array.", "Exception occurred with following context:&#xD;
+[xUnit.net 00:00:01.41]       Compilation: TestProject
+[xUnit.net 00:00:01.41]       ISymbol: Cmd (NamedType)
+[xUnit.net 00:00:01.41]       
+[xUnit.net 00:00:01.41]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.41]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]       -----
+[xUnit.net 00:00:01.41]       
+[xUnit.net 00:00:01.41]       Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018"),
+[xUnit.net 00:00:01.41]       // warning CS8785: Generator 'MessagePackGenerator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+[xUnit.net 00:00:01.41]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.41]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]       -----
+[xUnit.net 00:00:01.41]       
+[xUnit.net 00:00:01.41]       DiagnosticResult.CompilerWarning("CS8785").WithArguments("MessagePackGenerator", "IndexOutOfRangeException", "Index was outside the bounds of the array.", "System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.41]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+[xUnit.net 00:00:01.41]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+[xUnit.net 00:00:01.41]          at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]       -----
+[xUnit.net 00:00:01.41]       "),
+[xUnit.net 00:00:01.41]       &#xD;
+[xUnit.net 00:00:01.41]       
+[xUnit.net 00:00:01.41]       Stack Trace:
+[xUnit.net 00:00:01.41]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/DefaultVerifier.cs(79,0): at Microsoft.CodeAnalysis.Testing.DefaultVerifier.Equal[T](T expected, T actual, String message)
+[xUnit.net 00:00:01.41]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(546,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticResults(IEnumerable`1 actualResults, ImmutableArray`1 analyzers, DiagnosticResult[] expectedResults, IVerifier verifier)
+[xUnit.net 00:00:01.41]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(449,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticsAsync(EvaluatedProjectState primaryProject, ImmutableArray`1 additionalProjects, DiagnosticResult[] expected, IVerifier verifier, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(203,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunImplAsync(CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(172,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunAsync(CancellationToken cancellationToken)
+[xUnit.net 00:00:01.41]         /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs(648,0): at GenericsFormatterTests.RunWithMetadataReferenceAsync(String defineSource, String usageSource, String expectedResolverHintName, LanguageVersion languageVersion)
+[xUnit.net 00:00:01.41]         /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs(579,0): at GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference()
+[xUnit.net 00:00:01.41]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:01.44]       System.InvalidOperationException : Mismatch between number of diagnostics returned, expected "0" actual "3"&#xD;
+[xUnit.net 00:00:01.44]       &#xD;
+[xUnit.net 00:00:01.44]       Diagnostics:&#xD;
+[xUnit.net 00:00:01.44]       // error AD0001: Analyzer 'MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer' threw an exception of type 'System.IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+[xUnit.net 00:00:01.44]       Exception occurred with following context:&#xD;
+[xUnit.net 00:00:01.44]       Compilation: TestProject
+[xUnit.net 00:00:01.44]       ISymbol: MyObject (NamedType)
+[xUnit.net 00:00:01.44]       
+[xUnit.net 00:00:01.44]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.44]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]       -----
+[xUnit.net 00:00:01.44]       
+[xUnit.net 00:00:01.44]       Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018
+[xUnit.net 00:00:01.44]       DiagnosticResult.CompilerError("AD0001").WithArguments("MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer", "System.IndexOutOfRangeException", "Index was outside the bounds of the array.", "Exception occurred with following context:&#xD;
+[xUnit.net 00:00:01.44]       Compilation: TestProject
+[xUnit.net 00:00:01.44]       ISymbol: MyObject (NamedType)
+[xUnit.net 00:00:01.44]       
+[xUnit.net 00:00:01.44]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.44]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]       -----
+[xUnit.net 00:00:01.44]       
+[xUnit.net 00:00:01.44]       Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018"),
+[xUnit.net 00:00:01.44]       // warning CS8785: Generator 'MessagePackGenerator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+[xUnit.net 00:00:01.44]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.44]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]       -----
+[xUnit.net 00:00:01.44]       
+[xUnit.net 00:00:01.44]       DiagnosticResult.CompilerWarning("CS8785").WithArguments("MessagePackGenerator", "IndexOutOfRangeException", "Index was outside the bounds of the array.", "System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.44]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+[xUnit.net 00:00:01.44]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+[xUnit.net 00:00:01.44]          at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]       -----
+[xUnit.net 00:00:01.44]       "),
+[xUnit.net 00:00:01.44]       // error MsgPack004: Properties and fields of MessagePackObject-attributed types require either KeyAttribute or IgnoreMemberAttribute: global::TempProject.MyGenericStruct&lt;int&gt;.Unkeyed
+[xUnit.net 00:00:01.44]       new DiagnosticResult(MsgPack00xMessagePackAnalyzer.MsgPack004).WithArguments("global::TempProject.MyGenericStruct&lt;int&gt;", "Unkeyed"),
+[xUnit.net 00:00:01.44]       &#xD;
+[xUnit.net 00:00:01.44]       
+[xUnit.net 00:00:01.44]       Stack Trace:
+[xUnit.net 00:00:01.44]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/DefaultVerifier.cs(79,0): at Microsoft.CodeAnalysis.Testing.DefaultVerifier.Equal[T](T expected, T actual, String message)
+[xUnit.net 00:00:01.44]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(546,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticResults(IEnumerable`1 actualResults, ImmutableArray`1 analyzers, DiagnosticResult[] expectedResults, IVerifier verifier)
+[xUnit.net 00:00:01.44]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(449,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticsAsync(EvaluatedProjectState primaryProject, ImmutableArray`1 additionalProjects, DiagnosticResult[] expected, IVerifier verifier, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(203,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunImplAsync(CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(172,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunAsync(CancellationToken cancellationToken)
+[xUnit.net 00:00:01.44]         /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs(648,0): at GenericsFormatterTests.RunWithMetadataReferenceAsync(String defineSource, String usageSource, String expectedResolverHintName, LanguageVersion languageVersion)
+[xUnit.net 00:00:01.44]         /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs(625,0): at GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember()
+[xUnit.net 00:00:01.44]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:01.46]       System.InvalidOperationException : Mismatch between number of diagnostics returned, expected "0" actual "2"&#xD;
+[xUnit.net 00:00:01.46]       &#xD;
+[xUnit.net 00:00:01.46]       Diagnostics:&#xD;
+[xUnit.net 00:00:01.46]       // error AD0001: Analyzer 'MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer' threw an exception of type 'System.IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+[xUnit.net 00:00:01.46]       Exception occurred with following context:&#xD;
+[xUnit.net 00:00:01.46]       Compilation: TestProject
+[xUnit.net 00:00:01.46]       ISymbol: MyObject (NamedType)
+[xUnit.net 00:00:01.46]       
+[xUnit.net 00:00:01.46]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.46]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]       -----
+[xUnit.net 00:00:01.46]       
+[xUnit.net 00:00:01.46]       Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018
+[xUnit.net 00:00:01.46]       DiagnosticResult.CompilerError("AD0001").WithArguments("MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer", "System.IndexOutOfRangeException", "Index was outside the bounds of the array.", "Exception occurred with following context:&#xD;
+[xUnit.net 00:00:01.46]       Compilation: TestProject
+[xUnit.net 00:00:01.46]       ISymbol: MyObject (NamedType)
+[xUnit.net 00:00:01.46]       
+[xUnit.net 00:00:01.46]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.46]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.AnalyzeSymbol(SymbolAnalysisContext context, ReferenceSymbols typeReferences, AnalyzerOptions options) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 430
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.Analyzers.MsgPack00xMessagePackAnalyzer.&lt;&gt;c__DisplayClass55_1.&lt;Initialize&gt;b__1(SymbolAnalysisContext context) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/Analyzers/MsgPack00xMessagePackAnalyzer.cs:line 357
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.&lt;&gt;c.&lt;ExecuteSymbolActions&gt;b__45_1(ValueTuple`2 data)
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.Diagnostics.AnalyzerExecutor.ExecuteAndCatchIfThrows_NoLock[TArg](DiagnosticAnalyzer analyzer, Action`1 analyze, TArg argument, Nullable`1 info, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]       -----
+[xUnit.net 00:00:01.46]       
+[xUnit.net 00:00:01.46]       Suppress the following diagnostics to disable this analyzer: MsgPack003, MsgPack004, MsgPack005, MsgPack006, MsgPack007, MsgPack008, MsgPack009, MsgPack010, MsgPack011, MsgPack012, MsgPack013, MsgPack014, MsgPack015, MsgPack016, MsgPack017, MsgPack018"),
+[xUnit.net 00:00:01.46]       // warning CS8785: Generator 'MessagePackGenerator' failed to generate source. It will not contribute to the output and compilation errors may occur as a result. Exception was of type 'IndexOutOfRangeException' with message 'Index was outside the bounds of the array.'.&#xD;
+[xUnit.net 00:00:01.46]       System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.46]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]       -----
+[xUnit.net 00:00:01.46]       
+[xUnit.net 00:00:01.46]       DiagnosticResult.CompilerWarning("CS8785").WithArguments("MessagePackGenerator", "IndexOutOfRangeException", "Index was outside the bounds of the array.", "System.IndexOutOfRangeException: Index was outside the bounds of the array.
+[xUnit.net 00:00:01.46]          at System.Collections.Immutable.ImmutableArray`1.get_Item(Int32 index)
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1075
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectGeneric(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 651
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 363
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.GetObjectInfo(INamedTypeSymbol formattedType, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 1043
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectObject(INamedTypeSymbol type, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 678
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.CollectCore(ITypeSymbol typeSymbol, ISymbol callerSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 378
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect() in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 292
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.CodeAnalysis.TypeCollector.Collect(Compilation compilation, AnalyzerOptions options, ReferenceSymbols referenceSymbols, Action`1 reportAnalyzerDiagnostic, ITypeSymbol targetType, CancellationToken cancellationToken) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/CodeAnalysis/TypeCollector.cs:line 271
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c__DisplayClass0_0.&lt;Initialize&gt;g__Collect|8(ITypeSymbol typeSymbol) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 47
+[xUnit.net 00:00:01.46]          at MessagePack.SourceGenerator.MessagePackGenerator.&lt;&gt;c.&lt;Initialize&gt;b__0_4(ValueTuple`2 s, CancellationToken ct) in /private/tmp/ju26-review-2283-base/src/MessagePack.SourceGenerator/MessagePackGenerator.cs:line 55
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.TransformNode`2.&lt;&gt;c__DisplayClass6_0.&lt;.ctor&gt;b__0(TInput i, CancellationToken token)
+[xUnit.net 00:00:01.46]          at Microsoft.CodeAnalysis.TransformNode`2.UpdateStateTable(Builder builder, NodeStateTable`1 previousTable, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]       -----
+[xUnit.net 00:00:01.46]       "),
+[xUnit.net 00:00:01.46]       &#xD;
+[xUnit.net 00:00:01.46]       
+[xUnit.net 00:00:01.46]       Stack Trace:
+[xUnit.net 00:00:01.46]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/DefaultVerifier.cs(79,0): at Microsoft.CodeAnalysis.Testing.DefaultVerifier.Equal[T](T expected, T actual, String message)
+[xUnit.net 00:00:01.46]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(546,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticResults(IEnumerable`1 actualResults, ImmutableArray`1 analyzers, DiagnosticResult[] expectedResults, IVerifier verifier)
+[xUnit.net 00:00:01.46]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(449,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.VerifyDiagnosticsAsync(EvaluatedProjectState primaryProject, ImmutableArray`1 additionalProjects, DiagnosticResult[] expected, IVerifier verifier, CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(203,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunImplAsync(CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]         /_/src/Microsoft.CodeAnalysis.Testing/Microsoft.CodeAnalysis.Analyzer.Testing/AnalyzerTest`1.cs(172,0): at Microsoft.CodeAnalysis.Testing.AnalyzerTest`1.RunAsync(CancellationToken cancellationToken)
+[xUnit.net 00:00:01.46]         /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs(648,0): at GenericsFormatterTests.RunWithMetadataReferenceAsync(String defineSource, String usageSource, String expectedResolverHintName, LanguageVersion languageVersion)
+[xUnit.net 00:00:01.46]         /private/tmp/ju26-review-2283-base/tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs(540,0): at GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference()
+[xUnit.net 00:00:01.46]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:01.46]   Finished:    MessagePack.SourceGenerator.Tests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="test-host" outcome="Error" timestamp="2026-11-14T22:31:12.9400180+02:00">
+        <Text>[xUnit.net 00:00:01.41]     GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="test-host" outcome="Error" timestamp="2026-11-14T22:31:12.9706640+02:00">
+        <Text>[xUnit.net 00:00:01.44]     GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="test-host" outcome="Error" timestamp="2026-11-14T22:31:12.9895040+02:00">
+        <Text>[xUnit.net 00:00:01.46]     GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

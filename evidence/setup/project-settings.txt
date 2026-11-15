@@ -1,0 +1,13 @@
+tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj:3:    <TargetFrameworks>net8.0</TargetFrameworks>
+tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj:5:    <TargetFrameworks>net8.0</TargetFrameworks>
+tests/MessagePack.AspNetCoreMvcFormatter.Tests/MessagePack.AspNetCoreMvcFormatter.Tests.csproj:4:    <TargetFrameworks>net8.0</TargetFrameworks>
+tests/MessagePack.Tests/MessagePack.Tests.csproj:3:    <TargetFrameworks>net8.0</TargetFrameworks>
+tests/MessagePack.Tests/MessagePack.Tests.csproj:4:    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('Windows'))">$(TargetFrameworks);net472</TargetFrameworks>
+tests/MessagePack.Tests/MessagePack.Tests.csproj:30:    <Reference Include="Microsoft.CSharp" Condition="'$(TargetFramework)'=='net472'" />
+tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj:4:    <TargetFramework>net8.0</TargetFramework>
+src/MessagePack.SourceGenerator/Directory.Build.props:3:    <IsAnalyzerProject>true</IsAnalyzerProject>
+tests/MessagePack.SourceGenerator.MapModeExecutionTests/MessagePack.SourceGenerator.MapModeExecutionTests.csproj:5:    <TargetFramework>net8.0</TargetFramework>
+tests/MessagePack.SourceGenerator.ExecutionTests/MessagePack.SourceGenerator.ExecutionTests.csproj:5:    <TargetFramework>net8.0</TargetFramework>
+tests/MessagePack.Experimental.Tests/MessagePack.Experimental.Tests.csproj:4:    <TargetFrameworks>net8.0</TargetFrameworks>
+src/MessagePack.Analyzers/Directory.Build.props:3:    <IsAnalyzerProject>true</IsAnalyzerProject>
+src/MessagePack.Analyzers.CodeFixes/Directory.Build.props:3:    <IsAnalyzerProject>true</IsAnalyzerProject>

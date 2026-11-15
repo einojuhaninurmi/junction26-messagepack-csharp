@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_chrome.py", line 93, in <module>
+    cdp = CDP(next(t['webSocketDebuggerUrl'] for t in targets if t['type'] == 'page'))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_chrome.py", line 29, in __init__
+    assert b'101 Switching Protocols' in header, header
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'HTTP/1.1 101 WebSocket Protocol Handshake\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: QPTsCTbiU+y4UNwNbQV9a3VeK6Q=\r\n\r\n'

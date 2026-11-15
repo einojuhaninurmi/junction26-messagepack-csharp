@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reason": "Remove unnecessary local machine/run-user identifiers before version control. Test identities, outcomes, diagnostics, commits and timestamps are unchanged. Genuine AI request/response/decision files are not altered. Original bytes retained outside the repository.",
+  "artifacts": [
+    {
+      "path": "evidence/review-2283/base-targeted.log",
+      "originalSha256": "2d78cd6737bb171380a9f5aee425ccbc199a28639b78e4414e3258f9e7dd1e2a",
+      "curatedSha256": "6a56fad20c31381dc5b9f39f80ecf3d7165ec4ecddca799e51e1e0a51953d555"
+    },
+    {
+      "path": "evidence/review-2283/head-targeted.log",
+      "originalSha256": "6620ec67e8dfcbb472a195820b14486bdf5cb68e44342c6a967f57c7caa3b706",
+      "curatedSha256": "9b6cf28fe45fe537cc5156de0ad6eedfc3c953fb2be10515a45618c513e61bf8"
+    },
+    {
+      "path": "evidence/setup/new/test.log",
+      "originalSha256": "7eaa8106beff9d4eb041669ca5b321f3a138cb6837fe6bad26aa67bd99fe985b",
+      "curatedSha256": "4bc1877baca75d0e51331d61fe5d17426649347068f04aa7d10d824a2d52b6cd"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_43.trx",
+      "originalSha256": "2ccff2fbdd30a9061215a56ae82e36f50cd70784a15657c5158dee0f9a7894c9",
+      "curatedSha256": "8e3eaab3832fe201e82c1955ad3c619e3d2a6e8d6e8349e4e1170d761a232791"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42.trx",
+      "originalSha256": "31705fdbed7aef65da6a480ade62456c673ef582e5b36dac915cc85fca5f0df9",
+      "curatedSha256": "fc584f633c231852e837bc265378a12de6b2102588a99caf8c35d4e4653e9e85"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[1].trx",
+      "originalSha256": "67c40a4a505be62ebb6be1fc1ae4d4616caa9ed956173e5269c2ad20dc6611b4",
+      "curatedSha256": "ca5c60c519f52593c86b4725d8ec40adba6f84951d7df0af54889b974eb50985"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_24_06.trx",
+      "originalSha256": "e26be3b16e90523eb93db8441f8cf75b15e7fba5925866888fdce4ce7c526669",
+      "curatedSha256": "dd04b059ecdc935bc9ca866f62f281e7c771d49e04110876c91b094c5eda7b84"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[3].trx",
+      "originalSha256": "53750349386d26ee601ed1c8b8fa78360cf759ab33eb0de77af7807c6be12d69",
+      "curatedSha256": "2e415b5d2ded217f4aa7f8293302cd4c1f085a11c1c801b06ff6ea1c6d010ef7"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[2].trx",
+      "originalSha256": "6c1d42499c8090125d1c57230fc5a3211199c00c9788e6a39bb076a4186177e0",
+      "curatedSha256": "d61352f81d1843bf110f5a50cfe673eb91c2eee7867c2e4621705448378ffc1b"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_43[1].trx",
+      "originalSha256": "fba1341e6e62fb88593b6295c65c79dca05da26d9ecc4690b1dfc35a6c317746",
+      "curatedSha256": "297d8c921029419fefe924af3826b6f4e4a99a9dd9bbf653a3560c596e88a406"
+    },
+    {
+      "path": "evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[4].trx",
+      "originalSha256": "d6df0b47fc1bea913b43b34096ea6b6e791115348b34e128efc0903135b98f72",
+      "curatedSha256": "887217dd10d0428b66aa11522b0506cffa8bbc6f884706a62a160f218028ac2a"
+    },
+    {
+      "path": "evidence/review-2283/head-results/_test-host_2026-11-14_22_30_42.trx",
+      "originalSha256": "14543799dfc75ac71893d249c47726c0f05bfe72f5b1e1c21d656166c2d3c8ae",
+      "curatedSha256": "731ef2210204d29a8cacc2d874843f7e5c8e8fc4e40a37ada9719e4cd09fd864"
+    },
+    {
+      "path": "evidence/review-2283/base-results/_test-host_2026-11-14_22_31_13.trx",
+      "originalSha256": "0049f986cefabc2c725cc18123adc571c8ab0f4e92791484fe23af72be0b3efe",
+      "curatedSha256": "cf3b1c4fcc7960e870e6d9afa1560845e94629f7c54df4bb6989834ae3137ee3"
+    },
+    {
+      "path": "trust-demo/runs/20261114T211117Z-0ab4e209/head/results/targeted.trx",
+      "originalSha256": "25df6e2747f94aeafafd3a6c2018e1eeda3d518de9c63cd12091892df7b11e6a",
+      "curatedSha256": "c3f364b149bfcd9b6f58fd5db20cfcf1bc82cf87a7e39499a225dc8b1686a147"
+    },
+    {
+      "path": "trust-demo/runs/20261114T211117Z-0ab4e209/base/results/targeted.trx",
+      "originalSha256": "dbb1b5c86794e98942fd52dec9e251af58d73ad6bb017156b3c71d78321f9337",
+      "curatedSha256": "97af4161bbdaba39444321f28ebb49ad9994f6b2558f91836e4cf97973cd35e8"
+    },
+    {
+      "path": "trust-demo/runs/20261114T211745Z-9e9c520a/head/results/targeted.trx",
+      "originalSha256": "a5ac447ce18f165e68976f58ef6cb3b83ebcaf90a212ea925298c5cd939f44e9",
+      "curatedSha256": "3334fa76e6dde89b65116df6661e426ec4844205ca5acfbb5d0dcd31ef9a9ca6"
+    },
+    {
+      "path": "trust-demo/runs/20261114T211745Z-9e9c520a/base/results/targeted.trx",
+      "originalSha256": "fd883492f40ed14c7d980630f009098973eb716428e2893d92184eff74d74259",
+      "curatedSha256": "b6995d3b188cdcfa289f085149c44e264b3946f403aab6a6eebf5be15adb183a"
+    },
+    {
+      "path": "evidence/review-2283/head-commit.txt",
+      "originalSha256": "5cb7d12fe6fd180c66fef4ec9f04d52dcad2c5c720777f9d55f64d0b59b89e57",
+      "curatedSha256": "5d772bd6571fa1cba59bdf7a42b05aebd899a9c4a5f8a221c151209d96725f02"
+    }
+  ]
+}

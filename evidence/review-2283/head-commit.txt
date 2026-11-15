@@ -1,0 +1,8 @@
+Presentation metadata projection: author/committer identity omitted; verify commit/parent in Git.
+commit 9df83c38409c8bfad0517aebffe48211eda4a5b4
+tree 09d08ca6636efe8b23c7bb7bf35e6ba2978cd78d
+parent 32258fdbee4bcd653c79f51b4376b5103c6f4d27
+author [identity omitted] 1794438845 +0200
+committer [identity omitted] 1794438845 +0200
+
+    implementation for #2283

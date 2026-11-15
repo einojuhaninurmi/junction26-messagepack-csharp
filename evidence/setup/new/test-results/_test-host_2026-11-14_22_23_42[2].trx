@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f29053a0-f25b-4273-8ba0-294da378eedf" name="@test-host 2026-11-14 22:23:42" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-14T22:23:42.4497730+02:00" queuing="2026-11-14T22:23:42.4497730+02:00" start="2026-11-14T22:23:41.5258500+02:00" finish="2026-11-14T22:23:42.4744290+02:00" />
+  <TestSettings name="default" id="1494e02b-aa5a-4b48-914b-d021a7415f3e">
+    <Deployment runDeploymentRoot="_test-host_2026-11-14_22_23_42" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="cf7ae174-61e8-4b4a-ae1a-7ea6f7223a74" testId="e89e1f24-e560-a04e-310d-e2e39c1a6700" testName="StringKeyOverrideTests.KeyOnSettableProperty" computerName="test-host" duration="00:00:00.0056617" startTime="2026-11-14T22:23:42.4088380+02:00" endTime="2026-11-14T22:23:42.4088380+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf7ae174-61e8-4b4a-ae1a-7ea6f7223a74">
+      <Output>
+        <StdOut>{"message":"hi"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ddcacc89-db0e-4688-8e96-48c63fd8203c" testId="75f6d31d-4b72-a4f9-9238-71cde52c535c" testName="ExecutionTests.ClassWithPropertiesWithGetterAndCtor" computerName="test-host" duration="00:00:00.0013511" startTime="2026-11-14T22:23:42.4271300+02:00" endTime="2026-11-14T22:23:42.4271300+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddcacc89-db0e-4688-8e96-48c63fd8203c">
+      <Output>
+        <StdOut>{"A":1,"B":"four","C":3}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d67093ee-4efe-42f3-b830-17e26a4354a7" testId="410270fc-0e2e-1df3-c74d-00b582a961ae" testName="ExecutionTests.ClassWithEnumProperty" computerName="test-host" duration="00:00:00.0022277" startTime="2026-11-14T22:23:42.4281430+02:00" endTime="2026-11-14T22:23:42.4281430+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d67093ee-4efe-42f3-b830-17e26a4354a7">
+      <Output>
+        <StdOut>{"EnumValue":1}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="26acaa9b-b43a-45cb-9616-59f99eb6d0e8" testId="9d41bf25-5e62-24dd-f607-29f870fddfee" testName="ExecutionTests.GeneratedResolverPicksUpCustomResolversAutomatically" computerName="test-host" duration="00:00:00.0009534" startTime="2026-11-14T22:23:42.4274110+02:00" endTime="2026-11-14T22:23:42.4274110+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26acaa9b-b43a-45cb-9616-59f99eb6d0e8">
+      <Output>
+        <StdOut>[]
+[]</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="74043059-1539-4fce-a7f5-d49c3611b0f4" testId="743c2bcb-49dc-1253-62c8-17d31da44067" testName="ExecutionTests.ClassWithPropertiesWithGetterAndSetter" computerName="test-host" duration="00:00:00.0020856" startTime="2026-11-14T22:23:42.4274690+02:00" endTime="2026-11-14T22:23:42.4274690+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74043059-1539-4fce-a7f5-d49c3611b0f4">
+      <Output>
+        <StdOut>{"A":1,"B":4}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b86784e2-08ba-4245-9623-a9d9fe925d81" testId="730e6dd3-5f6c-15fa-cf98-e6060f5d238d" testName="StringKeyOverrideTests.KeyOnReadOnlyField" computerName="test-host" duration="00:00:00.0145048" startTime="2026-11-14T22:23:42.4310390+02:00" endTime="2026-11-14T22:23:42.4310390+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b86784e2-08ba-4245-9623-a9d9fe925d81">
+      <Output>
+        <StdOut>{"message":"hi"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c15e8276-be06-412e-a4f8-3558cdc075ad" testId="f9cf7595-4139-4dd9-dc28-e02b4d3d9685" testName="GeneratedCompositeResolverTests.CanFindFormatterFromVariousResolvers" computerName="test-host" duration="00:00:00.0053440" startTime="2026-11-14T22:23:42.3732200+02:00" endTime="2026-11-14T22:23:42.3732290+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c15e8276-be06-412e-a4f8-3558cdc075ad" />
+    <UnitTestResult executionId="c8a6f862-65b7-4c3a-ba3b-365bb31181c9" testId="6982561a-e2c0-9597-313a-eb2e26c3f8ae" testName="ExecutionTests.NewPropertyInDerivedType_KeepsValueIndependent" computerName="test-host" duration="00:00:00.0017208" startTime="2026-11-14T22:23:42.4271570+02:00" endTime="2026-11-14T22:23:42.4271570+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8a6f862-65b7-4c3a-ba3b-365bb31181c9">
+      <Output>
+        <StdOut>{"A3":"DerivedProp","A4":"DerivedField","A5":"DerivedTwo","A0":"BaseProp","A1":"BaseField","A2":"BaseTwo"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="28f7aeeb-8646-44a9-afd2-29f1012812ca" testId="57040fb4-5a35-d5ab-00fe-177f25d02413" testName="StringKeyOverrideTests.KeyOnReadOnlyProperty" computerName="test-host" duration="00:00:00.0376917" startTime="2026-11-14T22:23:42.4036730+02:00" endTime="2026-11-14T22:23:42.4036730+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28f7aeeb-8646-44a9-afd2-29f1012812ca">
+      <Output>
+        <StdOut>{"message":"hi"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="285774b3-d9ee-4818-b665-12bd460deb7b" testId="0efb419a-d573-72bc-730c-8465590f8ce2" testName="MapModeExecutionTests.TestMapModeAgainstVariousVisibility" computerName="test-host" duration="00:00:00.0384454" startTime="2026-11-14T22:23:42.4042470+02:00" endTime="2026-11-14T22:23:42.4042470+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="285774b3-d9ee-4818-b665-12bd460deb7b">
+      <Output>
+        <StdOut>{"PublicProperty":1,"PublicField":4}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b3cc2506-7582-4a17-ae04-ab0f157e12d1" testId="c44175fd-ba6b-2f46-1fdf-ac751b70f00e" testName="StringKeyOverrideTests.KeyOnSettableField" computerName="test-host" duration="00:00:00.0081383" startTime="2026-11-14T22:23:42.4271870+02:00" endTime="2026-11-14T22:23:42.4271870+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3cc2506-7582-4a17-ae04-ab0f157e12d1">
+      <Output>
+        <StdOut>{"message":"hi"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1f919964-4441-46c7-994d-b233b72c3bc2" testId="b5ad513a-83e1-c949-bc9d-2ea37eb92d14" testName="MapModeExecutionTests.NewPropertyInDerivedType_KeepsValueIndependent" computerName="test-host" duration="00:00:00.0014286" startTime="2026-11-14T22:23:42.4088770+02:00" endTime="2026-11-14T22:23:42.4088770+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f919964-4441-46c7-994d-b233b72c3bc2">
+      <Output>
+        <StdOut>{"B_Prop1":"DerivedProp","Prop1":"BaseProp"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cffc181f-6b71-4eac-8b90-e5e3173c596c" testId="eb7c94a6-d5df-eafb-2704-bfbd21efc094" testName="MapModeExecutionTests.TestMapModeAgainstVariousVisibility_AllowPrivateAttribute" computerName="test-host" duration="00:00:00.0037325" startTime="2026-11-14T22:23:42.4076560+02:00" endTime="2026-11-14T22:23:42.4076570+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cffc181f-6b71-4eac-8b90-e5e3173c596c">
+      <Output>
+        <StdOut>{"PublicProperty":1,"InternalProperty":2,"PrivateProperty":6,"PublicField":4,"InternalField":5,"privateField":3}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b8544e4c-31ce-40f7-8183-0f1cfd33dd4a" testId="9aef660d-5429-dc8e-c07d-054ade055709" testName="ExecutionTests.ClassWithPropertyWithCustomFormatterAttribute" computerName="test-host" duration="00:00:00.0010943" startTime="2026-11-14T22:23:42.4274450+02:00" endTime="2026-11-14T22:23:42.4274450+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8544e4c-31ce-40f7-8183-0f1cfd33dd4a">
+      <Output>
+        <StdOut>{"CustomValue":3}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2df2d7bc-da9f-4566-895d-0dc63ea4640c" testId="37e3757a-81b9-fddd-a7a3-870b9d7a917e" testName="ExecutionTests.ClassWithInitProperty" computerName="test-host" duration="00:00:00.0011884" startTime="2026-11-14T22:23:42.4274930+02:00" endTime="2026-11-14T22:23:42.4274930+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2df2d7bc-da9f-4566-895d-0dc63ea4640c">
+      <Output>
+        <StdOut>{"A":1,"B":4,"C":5}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="295aa0fa-3d18-4c42-8101-8d34849886e1" testId="4c5f06d3-6722-ab30-a740-677aee4534cd" testName="ExecutionTests.ClassWithUnionProperty" computerName="test-host" duration="00:00:00.0452794" startTime="2026-11-14T22:23:42.4100430+02:00" endTime="2026-11-14T22:23:42.4100430+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="295aa0fa-3d18-4c42-8101-8d34849886e1">
+      <Output>
+        <StdOut>{"Value":null}
+{"Value":[0,{}]}
+{"Value":[1,{}]}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="72b6f9ea-da36-4bcc-9c2f-c9cf86b67abd" testId="acc3303b-7762-85a1-af9d-544f815ca859" testName="ExecutionTests.DeserializingConstructorStartsWithIdx1" computerName="test-host" duration="00:00:00.0007228" startTime="2026-11-14T22:23:42.4281190+02:00" endTime="2026-11-14T22:23:42.4281190+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72b6f9ea-da36-4bcc-9c2f-c9cf86b67abd">
+      <Output>
+        <StdOut>{"Name":"foo"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d856f21-b3b5-4322-8b6b-29c54155985b" testId="87c8176f-3d6d-0dc1-884c-1c527e3bb169" testName="ExecutionTests.ClassWithPropertyWithTypeWithCustomFormatter" computerName="test-host" duration="00:00:00.0023388" startTime="2026-11-14T22:23:42.4270260+02:00" endTime="2026-11-14T22:23:42.4270260+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d856f21-b3b5-4322-8b6b-29c54155985b">
+      <Output>
+        <StdOut>{"CustomValue":3}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6f2e2a80-1918-4924-b48a-afead443d778" testId="a00d381d-1b1a-4d4c-c793-8702efcfba04" testName="ExecutionTests.ClassWithRequiredMembers" computerName="test-host" duration="00:00:00.0012627" startTime="2026-11-14T22:23:42.4280910+02:00" endTime="2026-11-14T22:23:42.4280910+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f2e2a80-1918-4924-b48a-afead443d778">
+      <Output>
+        <StdOut>{"A":1,"B":4,"C":5,"D":6}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="73a1ba07-278a-493e-9b02-bdbcb8601981" testId="5d79b254-6e8e-e906-e5b2-3bdabd7a4dde" testName="ExcludedCustomFormatter.ExcludedFormatterIsIgnored" computerName="test-host" duration="00:00:00.0443698" startTime="2026-11-14T22:23:42.4091890+02:00" endTime="2026-11-14T22:23:42.4091900+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73a1ba07-278a-493e-9b02-bdbcb8601981" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ExecutionTests.ClassWithPropertiesWithGetterAndSetter" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="743c2bcb-49dc-1253-62c8-17d31da44067">
+      <Execution id="74043059-1539-4fce-a7f5-d49c3611b0f4" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithPropertiesWithGetterAndSetter" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithUnionProperty" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="4c5f06d3-6722-ab30-a740-677aee4534cd">
+      <Execution id="295aa0fa-3d18-4c42-8101-8d34849886e1" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithUnionProperty" />
+    </UnitTest>
+    <UnitTest name="MapModeExecutionTests.TestMapModeAgainstVariousVisibility" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="0efb419a-d573-72bc-730c-8465590f8ce2">
+      <Execution id="285774b3-d9ee-4818-b665-12bd460deb7b" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MapModeExecutionTests" name="TestMapModeAgainstVariousVisibility" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.GeneratedResolverPicksUpCustomResolversAutomatically" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="9d41bf25-5e62-24dd-f607-29f870fddfee">
+      <Execution id="26acaa9b-b43a-45cb-9616-59f99eb6d0e8" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="GeneratedResolverPicksUpCustomResolversAutomatically" />
+    </UnitTest>
+    <UnitTest name="StringKeyOverrideTests.KeyOnSettableField" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="c44175fd-ba6b-2f46-1fdf-ac751b70f00e">
+      <Execution id="b3cc2506-7582-4a17-ae04-ab0f157e12d1" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="StringKeyOverrideTests" name="KeyOnSettableField" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.NewPropertyInDerivedType_KeepsValueIndependent" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="6982561a-e2c0-9597-313a-eb2e26c3f8ae">
+      <Execution id="c8a6f862-65b7-4c3a-ba3b-365bb31181c9" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="NewPropertyInDerivedType_KeepsValueIndependent" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithPropertyWithCustomFormatterAttribute" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="9aef660d-5429-dc8e-c07d-054ade055709">
+      <Execution id="b8544e4c-31ce-40f7-8183-0f1cfd33dd4a" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithPropertyWithCustomFormatterAttribute" />
+    </UnitTest>
+    <UnitTest name="GeneratedCompositeResolverTests.CanFindFormatterFromVariousResolvers" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="f9cf7595-4139-4dd9-dc28-e02b4d3d9685">
+      <Execution id="c15e8276-be06-412e-a4f8-3558cdc075ad" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="GeneratedCompositeResolverTests" name="CanFindFormatterFromVariousResolvers" />
+    </UnitTest>
+    <UnitTest name="StringKeyOverrideTests.KeyOnReadOnlyField" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="730e6dd3-5f6c-15fa-cf98-e6060f5d238d">
+      <Execution id="b86784e2-08ba-4245-9623-a9d9fe925d81" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="StringKeyOverrideTests" name="KeyOnReadOnlyField" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithInitProperty" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="37e3757a-81b9-fddd-a7a3-870b9d7a917e">
+      <Execution id="2df2d7bc-da9f-4566-895d-0dc63ea4640c" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithInitProperty" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithPropertiesWithGetterAndCtor" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="75f6d31d-4b72-a4f9-9238-71cde52c535c">
+      <Execution id="ddcacc89-db0e-4688-8e96-48c63fd8203c" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithPropertiesWithGetterAndCtor" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithRequiredMembers" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="a00d381d-1b1a-4d4c-c793-8702efcfba04">
+      <Execution id="6f2e2a80-1918-4924-b48a-afead443d778" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithRequiredMembers" />
+    </UnitTest>
+    <UnitTest name="ExcludedCustomFormatter.ExcludedFormatterIsIgnored" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="5d79b254-6e8e-e906-e5b2-3bdabd7a4dde">
+      <Execution id="73a1ba07-278a-493e-9b02-bdbcb8601981" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExcludedCustomFormatter" name="ExcludedFormatterIsIgnored" />
+    </UnitTest>
+    <UnitTest name="StringKeyOverrideTests.KeyOnReadOnlyProperty" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="57040fb4-5a35-d5ab-00fe-177f25d02413">
+      <Execution id="28f7aeeb-8646-44a9-afd2-29f1012812ca" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="StringKeyOverrideTests" name="KeyOnReadOnlyProperty" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithPropertyWithTypeWithCustomFormatter" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="87c8176f-3d6d-0dc1-884c-1c527e3bb169">
+      <Execution id="6d856f21-b3b5-4322-8b6b-29c54155985b" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithPropertyWithTypeWithCustomFormatter" />
+    </UnitTest>
+    <UnitTest name="MapModeExecutionTests.NewPropertyInDerivedType_KeepsValueIndependent" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="b5ad513a-83e1-c949-bc9d-2ea37eb92d14">
+      <Execution id="1f919964-4441-46c7-994d-b233b72c3bc2" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MapModeExecutionTests" name="NewPropertyInDerivedType_KeepsValueIndependent" />
+    </UnitTest>
+    <UnitTest name="MapModeExecutionTests.TestMapModeAgainstVariousVisibility_AllowPrivateAttribute" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="eb7c94a6-d5df-eafb-2704-bfbd21efc094">
+      <Execution id="cffc181f-6b71-4eac-8b90-e5e3173c596c" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MapModeExecutionTests" name="TestMapModeAgainstVariousVisibility_AllowPrivateAttribute" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.ClassWithEnumProperty" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="410270fc-0e2e-1df3-c74d-00b582a961ae">
+      <Execution id="d67093ee-4efe-42f3-b830-17e26a4354a7" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="ClassWithEnumProperty" />
+    </UnitTest>
+    <UnitTest name="ExecutionTests.DeserializingConstructorStartsWithIdx1" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="acc3303b-7762-85a1-af9d-544f815ca859">
+      <Execution id="72b6f9ea-da36-4bcc-9c2f-c9cf86b67abd" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ExecutionTests" name="DeserializingConstructorStartsWithIdx1" />
+    </UnitTest>
+    <UnitTest name="StringKeyOverrideTests.KeyOnSettableProperty" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.sourcegenerator.mapmodeexecutiontests/debug/net8.0/messagepack.sourcegenerator.mapmodeexecutiontests.dll" id="e89e1f24-e560-a04e-310d-e2e39c1a6700">
+      <Execution id="cf7ae174-61e8-4b4a-ae1a-7ea6f7223a74" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="StringKeyOverrideTests" name="KeyOnSettableProperty" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e89e1f24-e560-a04e-310d-e2e39c1a6700" executionId="cf7ae174-61e8-4b4a-ae1a-7ea6f7223a74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="75f6d31d-4b72-a4f9-9238-71cde52c535c" executionId="ddcacc89-db0e-4688-8e96-48c63fd8203c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="410270fc-0e2e-1df3-c74d-00b582a961ae" executionId="d67093ee-4efe-42f3-b830-17e26a4354a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d41bf25-5e62-24dd-f607-29f870fddfee" executionId="26acaa9b-b43a-45cb-9616-59f99eb6d0e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="743c2bcb-49dc-1253-62c8-17d31da44067" executionId="74043059-1539-4fce-a7f5-d49c3611b0f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="730e6dd3-5f6c-15fa-cf98-e6060f5d238d" executionId="b86784e2-08ba-4245-9623-a9d9fe925d81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f9cf7595-4139-4dd9-dc28-e02b4d3d9685" executionId="c15e8276-be06-412e-a4f8-3558cdc075ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6982561a-e2c0-9597-313a-eb2e26c3f8ae" executionId="c8a6f862-65b7-4c3a-ba3b-365bb31181c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57040fb4-5a35-d5ab-00fe-177f25d02413" executionId="28f7aeeb-8646-44a9-afd2-29f1012812ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0efb419a-d573-72bc-730c-8465590f8ce2" executionId="285774b3-d9ee-4818-b665-12bd460deb7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c44175fd-ba6b-2f46-1fdf-ac751b70f00e" executionId="b3cc2506-7582-4a17-ae04-ab0f157e12d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5ad513a-83e1-c949-bc9d-2ea37eb92d14" executionId="1f919964-4441-46c7-994d-b233b72c3bc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb7c94a6-d5df-eafb-2704-bfbd21efc094" executionId="cffc181f-6b71-4eac-8b90-e5e3173c596c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9aef660d-5429-dc8e-c07d-054ade055709" executionId="b8544e4c-31ce-40f7-8183-0f1cfd33dd4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37e3757a-81b9-fddd-a7a3-870b9d7a917e" executionId="2df2d7bc-da9f-4566-895d-0dc63ea4640c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c5f06d3-6722-ab30-a740-677aee4534cd" executionId="295aa0fa-3d18-4c42-8101-8d34849886e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="acc3303b-7762-85a1-af9d-544f815ca859" executionId="72b6f9ea-da36-4bcc-9c2f-c9cf86b67abd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87c8176f-3d6d-0dc1-884c-1c527e3bb169" executionId="6d856f21-b3b5-4322-8b6b-29c54155985b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a00d381d-1b1a-4d4c-c793-8702efcfba04" executionId="6f2e2a80-1918-4924-b48a-afead443d778" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d79b254-6e8e-e906-e5b2-3bdabd7a4dde" executionId="73a1ba07-278a-493e-9b02-bdbcb8601981" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="20" executed="20" passed="20" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.34)
+[xUnit.net 00:00:00.13]   Discovering: MessagePack.SourceGenerator.MapModeExecutionTests
+[xUnit.net 00:00:00.15]   Discovered:  MessagePack.SourceGenerator.MapModeExecutionTests
+[xUnit.net 00:00:00.15]   Starting:    MessagePack.SourceGenerator.MapModeExecutionTests
+[xUnit.net 00:00:00.33]   Finished:    MessagePack.SourceGenerator.MapModeExecutionTests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

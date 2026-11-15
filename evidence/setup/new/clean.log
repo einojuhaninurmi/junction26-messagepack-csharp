@@ -1,0 +1,714 @@
+Build started 14/11/2026 22:22:47.
+
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" on node 1 (Clean target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Debug|Any CPU".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/benchmark/CollectionsMarshalBenchmark/CollectionsMarshalBenchmark.csproj" (2) on node 1 (Clean target(s)).
+     2>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/TraceReloggerLib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/Dia2Lib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/x86/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/x86/KernelTraceControl.Win61.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/x86/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/amd64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/amd64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/arm64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/arm64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/Collecti.099C0D62.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/refint/CollectionsMarshalBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/CollectionsMarshalBenchmark.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/CollectionsMarshalBenchmark/Debug/net8.0/ref/CollectionsMarshalBenchmark.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.Analyzers/MessagePack.Analyzers.csproj" (8) on node 5 (Clean target(s)).
+     8>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessageP.3D14C2CA.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/refint/MessagePack.Analyzers.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/MessagePack.Analyzers.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers/Debug/netstandard2.0/ref/MessagePack.Analyzers.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.Analyzers.CodeFixes/MessagePack.Analyzers.CodeFixes.csproj" (9) on node 7 (Clean target(s)).
+     9>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessageP.E8C14C7A.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/refint/MessagePack.Analyzers.CodeFixes.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/MessagePack.Analyzers.CodeFixes.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Analyzers.CodeFixes/Debug/netstandard2.0/ref/MessagePack.Analyzers.CodeFixes.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.SourceGenerator.MapModeExecutionTests/MessagePack.SourceGenerator.MapModeExecutionTests.csproj" (7) on node 3 (Clean target(s)).
+     7>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.SourceGenerator.MapModeExecutionTests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.sourcelink.json".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.SourceGenerator.ExecutionTests/MessagePack.SourceGenerator.ExecutionTests.csproj" (10) on node 4 (Clean target(s)).
+    10>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.SourceGenerator.ExecutionTests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.sourcelink.json".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.Experimental/MessagePack.Experimental.csproj" (4) on node 6 (Clean target(s)).
+     4>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Experimental/MessagePack.Experimental.csproj" (4) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.Experimental/MessagePack.Experimental.csproj" (4:2) on node 6 (Clean target(s)).
+     4>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessageP.FE423F3A.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/refint/MessagePack.Experimental.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/MessagePack.Experimental.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Experimental/Debug/net8.0/ref/MessagePack.Experimental.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (5) on node 2 (Clean target(s)).
+     5>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (5) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (5:2) on node 2 (Clean target(s)).
+     5>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.GeneratedCode.Tests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.GeneratedCode.Tests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.sourcelink.json".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Experimental.Tests/MessagePack.Experimental.Tests.csproj" (6) on node 8 (Clean target(s)).
+     6>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Experimental.Tests/MessagePack.Experimental.Tests.csproj" (6) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Experimental.Tests/MessagePack.Experimental.Tests.csproj" (6:2) on node 8 (Clean target(s)).
+     6>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.Experimental.Tests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/NUnit3.TestAdapter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/NUnit3.TestAdapter.pdb".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/nunit.engine.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/nunit.engine.api.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/nunit.engine.core.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/testcentric.engine.metadata.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessageP.627FBA1E.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/refint/MessagePack.Experimental.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Experimental.Tests/Debug/net8.0/ref/MessagePack.Experimental.Tests.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj" (14) on node 1 (Clean target(s)).
+    14>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.SourceGenerator.Tests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessageP.7046AABD.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/refint/MessagePack.SourceGenerator.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.SourceGenerator.Tests/Debug/net8.0/ref/MessagePack.SourceGenerator.Tests.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.SourceGenerator/MessagePack.SourceGenerator.csproj" (12:7) on node 4 (Clean target(s)).
+    12>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.Strings.resources".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.csproj.GenerateResource.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/refint/MessagePack.SourceGenerator.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/MessagePack.SourceGenerator.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.SourceGenerator/Debug/netstandard2.0/ref/MessagePack.SourceGenerator.dll".
+    12>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.SourceGenerator/MessagePack.SourceGenerator.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/benchmark/ExperimentalBenchmark/ExperimentalBenchmark.csproj" (13) on node 3 (Clean target(s)).
+    13>Project "/Users/os/junction26-messagepack-csharp/benchmark/ExperimentalBenchmark/ExperimentalBenchmark.csproj" (13) is building "/Users/os/junction26-messagepack-csharp/benchmark/ExperimentalBenchmark/ExperimentalBenchmark.csproj" (13:2) on node 3 (Clean target(s)).
+    13>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/TraceReloggerLib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/Dia2Lib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/x86/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/x86/KernelTraceControl.Win61.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/x86/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/amd64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/amd64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/arm64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/arm64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/Experime.1EDAE554.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/refint/ExperimentalBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ExperimentalBenchmark.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/ExperimentalBenchmark/Debug/net8.0/ref/ExperimentalBenchmark.dll".
+   4:2>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Experimental/MessagePack.Experimental.csproj" (4:2) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (3:12) on node 6 (Clean target(s)).
+     3>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/net8.0/MessagePack.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/net8.0/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/net8.0/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessageP.985858DE.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/refint/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net8.0/ref/MessagePack.dll".
+     9>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Analyzers.CodeFixes/MessagePack.Analyzers.CodeFixes.csproj" (Clean target(s)).
+     8>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Analyzers/MessagePack.Analyzers.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj" (18) on node 7 (Clean target(s)).
+    18>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj" (18) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj" (18:2) on node 7 (Clean target(s)).
+    18>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.Internal.Tests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessageP.BE911919.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/refint/MessagePack.Internal.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Internal.Tests/Debug/net8.0/ref/MessagePack.Internal.Tests.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.Annotations/MessagePack.Annotations.csproj" (11:11) on node 1 (Clean target(s)).
+ 11:11>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Annotations/MessagePack.Annotations.csproj" (11:11) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.Annotations/MessagePack.Annotations.csproj" (11:12) on node 1 (Clean target(s)).
+    11>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/refint/MessagePack.Annotations.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/MessagePack.Annotations.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.Annotations/Debug/netstandard2.0/ref/MessagePack.Annotations.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/benchmark/SerializerBenchmark/SerializerBenchmark.csproj" (21) on node 3 (Clean target(s)).
+    21>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/TraceReloggerLib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/Dia2Lib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/x86/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/x86/KernelTraceControl.Win61.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/x86/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/amd64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/amd64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/arm64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/arm64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/SerializerBenchmark".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/Serializ.6C22C45E.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/refint/SerializerBenchmark.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/SerializerBenchmark.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/benchmark/SerializerBenchmark/Debug/net8.0/ref/SerializerBenchmark.dll".
+    11>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Annotations/MessagePack.Annotations.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/sandbox/MessagePack.Internal/MessagePack.Internal.csproj" (19) on node 5 (Clean target(s)).
+    19>Project "/Users/os/junction26-messagepack-csharp/sandbox/MessagePack.Internal/MessagePack.Internal.csproj" (19) is building "/Users/os/junction26-messagepack-csharp/sandbox/MessagePack.Internal/MessagePack.Internal.csproj" (19:2) on node 5 (Clean target(s)).
+    19>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/refint/MessagePack.Internal.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/MessagePack.Internal.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/MessagePack.Internal/Debug/net8.0/ref/MessagePack.Internal.dll".
+    11>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Annotations/MessagePack.Annotations.csproj" (Clean target(s)).
+    19>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/MessagePack.Internal/MessagePack.Internal.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.AspNetCoreMvcFormatter.Tests/MessagePack.AspNetCoreMvcFormatter.Tests.csproj" (20) on node 6 (Clean target(s)).
+    20>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.AspNetCoreMvcFormatter.Tests/MessagePack.AspNetCoreMvcFormatter.Tests.csproj" (20) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.AspNetCoreMvcFormatter.Tests/MessagePack.AspNetCoreMvcFormatter.Tests.csproj" (20:2) on node 6 (Clean target(s)).
+    20>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.AspNetCoreMvcFormatter.Tests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.Tests.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.Tests.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessageP.63AA9B45.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/refint/MessagePack.AspNetCoreMvcFormatter.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/ref/MessagePack.AspNetCoreMvcFormatter.Tests.dll".
+    19>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/MessagePack.Internal/MessagePack.Internal.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/sandbox/TestData2/TestData2.csproj" (23) on node 4 (Clean target(s)).
+    23>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/TestData2/Debug/net472/TestData2.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/TestData2/Debug/net472/TestData2.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.csproj.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/refint/TestData2.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/TestData2.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/TestData2/Debug/net472/ref/TestData2.dll".
+   5:2>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (5:2) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.UnityShims/MessagePack.UnityShims.csproj" (16:2) on node 2 (Clean target(s)).
+    16>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessageP.960316B6.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/refint/MessagePack.UnityShims.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/MessagePack.UnityShims.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.UnityShims/Debug/netstandard2.0/ref/MessagePack.UnityShims.dll".
+   5:2>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (5:2) is building "/Users/os/junction26-messagepack-csharp/sandbox/SharedData/SharedData.csproj" (17:3) on node 8 (Clean target(s)).
+    17>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SharedData/Debug/netstandard2.0/SharedData.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SharedData/Debug/netstandard2.0/SharedData.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/SharedData/Debug/netstandard2.0/SharedData.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.csproj.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/refint/SharedData.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/SharedData.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/SharedData/Debug/netstandard2.0/ref/SharedData.dll".
+     3>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (22) on node 1 (Clean target(s)).
+    22>Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (22) is building "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (22:2) on node 1 (Clean target(s)).
+    22>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/TraceReloggerLib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/Dia2Lib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/x86/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/x86/KernelTraceControl.Win61.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/x86/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/amd64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/amd64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/arm64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/arm64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.exe.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.csproj.SuggestedBindingRedirects.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.exe.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenc.915BB08D.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/refint/PerfBenchmarkDotNet.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/PerfBenchmarkDotNet.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net472/ref/PerfBenchmarkDotNet.exe".
+     4>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Experimental/MessagePack.Experimental.csproj" (Clean target(s)).
+    21>Done Building Project "/Users/os/junction26-messagepack-csharp/benchmark/SerializerBenchmark/SerializerBenchmark.csproj" (Clean target(s)).
+     4>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.Experimental/MessagePack.Experimental.csproj" (Clean target(s)).
+    13>Done Building Project "/Users/os/junction26-messagepack-csharp/benchmark/ExperimentalBenchmark/ExperimentalBenchmark.csproj" (Clean target(s)).
+    13>Done Building Project "/Users/os/junction26-messagepack-csharp/benchmark/ExperimentalBenchmark/ExperimentalBenchmark.csproj" (Clean target(s)).
+     7>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.SourceGenerator.MapModeExecutionTests/MessagePack.SourceGenerator.MapModeExecutionTests.csproj" (Clean target(s)).
+    23>Project "/Users/os/junction26-messagepack-csharp/sandbox/TestData2/TestData2.csproj" (23) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (3:27) on node 4 (Clean target(s)).
+     3>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/net472/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/net472/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessageP.985858DE.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/refint/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/net472/ref/MessagePack.dll".
+    18>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj" (Clean target(s)).
+     2>Done Building Project "/Users/os/junction26-messagepack-csharp/benchmark/CollectionsMarshalBenchmark/CollectionsMarshalBenchmark.csproj" (Clean target(s)).
+    14>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (24) on node 5 (Clean target(s)).
+    24>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (24) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (24:3) on node 5 (Clean target(s)).
+    24>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessageP.EDA79503.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/refint/MessagePack.AspNetCoreMvcFormatter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/MessagePack.AspNetCoreMvcFormatter.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/netstandard2.0/ref/MessagePack.AspNetCoreMvcFormatter.dll".
+    18>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj" (Clean target(s)).
+    24>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (24) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (24:4) on node 8 (Clean target(s)).
+    24>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessageP.EDA79503.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/refint/MessagePack.AspNetCoreMvcFormatter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.AspNetCoreMvcFormatter/Debug/net8.0/ref/MessagePack.AspNetCoreMvcFormatter.dll".
+     3>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (Clean target(s)).
+    10>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.SourceGenerator.ExecutionTests/MessagePack.SourceGenerator.ExecutionTests.csproj" (Clean target(s)).
+  16:2>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.UnityShims/MessagePack.UnityShims.csproj" (16:2) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (3:31) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/netstandard2.0/MessagePack.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/netstandard2.0/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/netstandard2.0/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessageP.985858DE.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/refint/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.0/ref/MessagePack.dll".
+    23>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/TestData2/TestData2.csproj" (Clean target(s)).
+    24>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (Clean target(s)).
+    22>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (Clean target(s)).
+     6>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Experimental.Tests/MessagePack.Experimental.Tests.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (27) on node 6 (Clean target(s)).
+    27>Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (27) is building "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (27:2) on node 1 (Clean target(s)).
+    27>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net8.0/PerfNetFramework".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net8.0/PerfNetFramework.dll.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net8.0/PerfNetFramework.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net8.0/PerfNetFramework.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net8.0/PerfNetFramework.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net8.0/PerfNetFramework.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.csproj.SuggestedBindingRedirects.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.dll.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetF.4A73C0D3.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/refint/PerfNetFramework.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/PerfNetFramework.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net8.0/ref/PerfNetFramework.dll".
+     6>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Experimental.Tests/MessagePack.Experimental.Tests.csproj" (Clean target(s)).
+    27>Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (27) is building "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (27:3) on node 6 (Clean target(s)).
+    27>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net472/PerfNetFramework.exe.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net472/PerfNetFramework.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfNetFramework/Debug/net472/PerfNetFramework.xml".
+    22>Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (22) is building "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (22:3) on node 5 (Clean target(s)).
+    22>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/TraceReloggerLib.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/Dia2Lib.dll".
+    27>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.csproj.AssemblyReference.cache".
+    22>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/x86/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/x86/KernelTraceControl.Win61.dll".
+    27>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.csproj.SuggestedBindingRedirects.cache".
+    22>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/x86/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/amd64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/amd64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/arm64/KernelTraceControl.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/arm64/msdia140.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.dll.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.csproj.SuggestedBindingRedirects.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.dll.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenc.915BB08D.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/refint/PerfBenchmarkDotNet.dll".
+    27>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.exe.config".
+    22>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/PerfBenchmarkDotNet.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfBenchmarkDotNet/Debug/net8.0/ref/PerfBenchmarkDotNet.dll".
+    27>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetF.4A73C0D3.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/refint/PerfNetFramework.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/PerfNetFramework.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/PerfNetFramework/Debug/net472/ref/PerfNetFramework.exe".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.ReactiveProperty/MessagePack.ReactiveProperty.csproj" (28:2) on node 7 (Clean target(s)).
+    28>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessageP.7173D671.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/refint/MessagePack.ReactiveProperty.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/MessagePack.ReactiveProperty.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ReactiveProperty/Debug/netstandard2.0/ref/MessagePack.ReactiveProperty.dll".
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack.ImmutableCollection/MessagePack.ImmutableCollection.csproj" (26:2) on node 4 (Clean target(s)).
+    26>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessageP.F642189C.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/refint/MessagePack.ImmutableCollection.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/MessagePack.ImmutableCollection.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack.ImmutableCollection/Debug/netstandard2.0/ref/MessagePack.ImmutableCollection.dll".
+    27>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (Clean target(s)).
+     3>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (Clean target(s)).
+    27>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (Clean target(s)).
+    16>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.UnityShims/MessagePack.UnityShims.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/sandbox/DynamicCodeDumper/DynamicCodeDumper.csproj" (29) on node 8 (Clean target(s)).
+    29>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.exe.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.csproj.SuggestedBindingRedirects.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.exe.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicC.6AABACCF.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/refint/DynamicCodeDumper.exe".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/DynamicCodeDumper.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/DynamicCodeDumper/Debug/net472/ref/DynamicCodeDumper.exe".
+    28>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.ReactiveProperty/MessagePack.ReactiveProperty.csproj" (Clean target(s)).
+    29>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/DynamicCodeDumper/DynamicCodeDumper.csproj" (Clean target(s)).
+    17>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/SharedData/SharedData.csproj" (Clean target(s)).
+    27>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfNetFramework/PerfNetFramework.csproj" (Clean target(s)).
+    22>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/sandbox/Sandbox/Sandbox.csproj" (15:3) on node 3 (Clean target(s)).
+  15:3>Project "/Users/os/junction26-messagepack-csharp/sandbox/Sandbox/Sandbox.csproj" (15:3) is building "/Users/os/junction26-messagepack-csharp/sandbox/Sandbox/Sandbox.csproj" (15:4) on node 3 (Clean target(s)).
+    15>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/Sandbox/Debug/net8.0/Sandbox".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/Sandbox/Debug/net8.0/Sandbox.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/Sandbox/Debug/net8.0/Sandbox.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/Sandbox/Debug/net8.0/Sandbox.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/Sandbox/Debug/net8.0/Sandbox.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.csproj.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/refint/Sandbox.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/Sandbox.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/sandbox/Sandbox/Debug/net8.0/ref/Sandbox.dll".
+    26>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.ImmutableCollection/MessagePack.ImmutableCollection.csproj" (Clean target(s)).
+    24>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Tests/MessagePack.Tests.csproj" (25:3) on node 1 (Clean target(s)).
+  25:3>Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Tests/MessagePack.Tests.csproj" (25:3) is building "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Tests/MessagePack.Tests.csproj" (25:4) on node 1 (Clean target(s)).
+    25>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/.msCoverageSourceRootsMapping_MessagePack.Tests".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.dll.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.runtimeconfig.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.csproj.SuggestedBindingRedirects.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.dll.config".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.GeneratedMSBuildEditorConfig.editorconfig".
+    24>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack.AspNetCoreMvcFormatter/MessagePack.AspNetCoreMvcFormatter.csproj" (Clean target(s)).
+    25>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessageP.916798B9.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/refint/MessagePack.Tests.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.genruntimeconfig.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/tests/MessagePack.Tests/Debug/net8.0/ref/MessagePack.Tests.dll".
+    15>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/Sandbox/Sandbox.csproj" (Clean target(s)).
+    15>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/Sandbox/Sandbox.csproj" (Clean target(s)).
+    25>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Tests/MessagePack.Tests.csproj" (Clean target(s)).
+    25>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.Tests/MessagePack.Tests.csproj" (Clean target(s)).
+    22>Done Building Project "/Users/os/junction26-messagepack-csharp/sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj" (Clean target(s)).
+    20>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.AspNetCoreMvcFormatter.Tests/MessagePack.AspNetCoreMvcFormatter.Tests.csproj" (Clean target(s)).
+    20>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.AspNetCoreMvcFormatter.Tests/MessagePack.AspNetCoreMvcFormatter.Tests.csproj" (Clean target(s)).
+     1>Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (1) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (3:47) on node 4 (Clean target(s)).
+  3:47>Project "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (3:47) is building "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (3:55) on node 2 (Clean target(s)).
+     3>CoreClean:
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/netstandard2.1/MessagePack.deps.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/netstandard2.1/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/bin/MessagePack/Debug/netstandard2.1/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.csproj.AssemblyReference.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.AssemblyInfoInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.AssemblyInfo.cs".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.csproj.CoreCompileInputs.cache".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.sourcelink.json".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessageP.985858DE.Up2Date".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/refint/MessagePack.dll".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/MessagePack.xml".
+         Deleting file "/Users/os/junction26-messagepack-csharp/obj/src/MessagePack/Debug/netstandard2.1/ref/MessagePack.dll".
+     3>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (Clean target(s)).
+     3>Done Building Project "/Users/os/junction26-messagepack-csharp/src/MessagePack/MessagePack.csproj" (Clean target(s)).
+     5>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (Clean target(s)).
+     5>Done Building Project "/Users/os/junction26-messagepack-csharp/tests/MessagePack.GeneratedCode.Tests/MessagePack.GeneratedCode.Tests.csproj" (Clean target(s)).
+     1>Done Building Project "/Users/os/junction26-messagepack-csharp/MessagePack.sln" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.21

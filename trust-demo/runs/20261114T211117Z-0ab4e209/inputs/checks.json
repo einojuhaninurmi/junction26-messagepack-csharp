@@ -1,0 +1,18 @@
+{
+  "version": "2283-checks-1",
+  "tests": [
+    "GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference",
+    "GenericsFormatterTests.ClosedGenericRecordStruct_FromMetadataReference",
+    "GenericsFormatterTests.ClosedGenericStruct_FromMetadataReference_UnkeyedMember"
+  ],
+  "testFile": "tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs",
+  "project": "tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj",
+  "probeSource": "evidence/review-2283/Probe.cs",
+  "probeCases": [
+    "referenced-library",
+    "issue-repro-with-implicit-resolver",
+    "source-unkeyed-control",
+    "source-null-key-property",
+    "source-null-key-positional-record"
+  ]
+}

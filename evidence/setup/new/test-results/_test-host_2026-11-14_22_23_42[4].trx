@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="be74075a-60db-4b74-8568-96bd3da28f5d" name="@test-host 2026-11-14 22:23:42" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-14T22:23:42.6486020+02:00" queuing="2026-11-14T22:23:42.6486020+02:00" start="2026-11-14T22:23:41.2311530+02:00" finish="2026-11-14T22:23:42.6523220+02:00" />
+  <TestSettings name="default" id="c44fa98f-8972-4d95-9347-346d2fcb8105">
+    <Deployment runDeploymentRoot="_test-host_2026-11-14_22_23_42" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2552b74a-7332-45a1-bdbc-e70b899d547d" testId="1e9639c2-eb38-1cde-34e7-a1899003dbaa" testName="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackFormatterCanNotRead" computerName="test-host" duration="00:00:00.0798697" startTime="2026-11-14T22:23:42.2112870+02:00" endTime="2026-11-14T22:23:42.2113060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2552b74a-7332-45a1-bdbc-e70b899d547d" />
+    <UnitTestResult executionId="4d558437-c038-4923-8ceb-a5b351f0c3fc" testId="93fd9105-11ea-9070-00eb-5cee57ef1855" testName="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackFormatter" computerName="test-host" duration="00:00:00.3517863" startTime="2026-11-14T22:23:42.5757810+02:00" endTime="2026-11-14T22:23:42.5757820+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d558437-c038-4923-8ceb-a5b351f0c3fc" />
+    <UnitTestResult executionId="2011d180-f9f4-423f-9b67-4acbd953bf51" testId="0a6682bd-cc10-53d8-e357-a98b1fdff61f" testName="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.LZ4MessagePackFormatterCanNotRead" computerName="test-host" duration="00:00:00.0054912" startTime="2026-11-14T22:23:42.2238480+02:00" endTime="2026-11-14T22:23:42.2238480+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2011d180-f9f4-423f-9b67-4acbd953bf51" />
+    <UnitTestResult executionId="a6d80fd8-d381-422e-9201-bc8e13aa8613" testId="f3d2854e-ecd1-ba76-e291-7463583e140f" testName="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.LZ4MessagePackFormatter" computerName="test-host" duration="00:00:00.0089892" startTime="2026-11-14T22:23:42.5848990+02:00" endTime="2026-11-14T22:23:42.5849000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6d80fd8-d381-422e-9201-bc8e13aa8613" />
+    <UnitTestResult executionId="179eede1-04e9-40e3-a402-0613630ca0cc" testId="0e6a00ba-8710-1467-fb64-818a9dc41fdb" testName="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackOutputFormatterSupportsXMsgPack" computerName="test-host" duration="00:00:00.0079632" startTime="2026-11-14T22:23:42.2182970+02:00" endTime="2026-11-14T22:23:42.2182970+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="179eede1-04e9-40e3-a402-0613630ca0cc" />
+    <UnitTestResult executionId="f5d91bbf-987b-4298-9701-210d51207a95" testId="afd000e1-e2dd-c46a-d990-2b3a98e368d2" testName="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackInputFormatterSupportsXMsgPack" computerName="test-host" duration="00:00:00.0000630" startTime="2026-11-14T22:23:42.2239390+02:00" endTime="2026-11-14T22:23:42.2239390+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5d91bbf-987b-4298-9701-210d51207a95" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackFormatterCanNotRead" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.aspnetcoremvcformatter.tests/debug/net8.0/messagepack.aspnetcoremvcformatter.tests.dll" id="1e9639c2-eb38-1cde-34e7-a1899003dbaa">
+      <Execution id="2552b74a-7332-45a1-bdbc-e70b899d547d" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest" name="MessagePackFormatterCanNotRead" />
+    </UnitTest>
+    <UnitTest name="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.LZ4MessagePackFormatterCanNotRead" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.aspnetcoremvcformatter.tests/debug/net8.0/messagepack.aspnetcoremvcformatter.tests.dll" id="0a6682bd-cc10-53d8-e357-a98b1fdff61f">
+      <Execution id="2011d180-f9f4-423f-9b67-4acbd953bf51" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest" name="LZ4MessagePackFormatterCanNotRead" />
+    </UnitTest>
+    <UnitTest name="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackOutputFormatterSupportsXMsgPack" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.aspnetcoremvcformatter.tests/debug/net8.0/messagepack.aspnetcoremvcformatter.tests.dll" id="0e6a00ba-8710-1467-fb64-818a9dc41fdb">
+      <Execution id="179eede1-04e9-40e3-a402-0613630ca0cc" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest" name="MessagePackOutputFormatterSupportsXMsgPack" />
+    </UnitTest>
+    <UnitTest name="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackInputFormatterSupportsXMsgPack" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.aspnetcoremvcformatter.tests/debug/net8.0/messagepack.aspnetcoremvcformatter.tests.dll" id="afd000e1-e2dd-c46a-d990-2b3a98e368d2">
+      <Execution id="f5d91bbf-987b-4298-9701-210d51207a95" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest" name="MessagePackInputFormatterSupportsXMsgPack" />
+    </UnitTest>
+    <UnitTest name="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.LZ4MessagePackFormatter" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.aspnetcoremvcformatter.tests/debug/net8.0/messagepack.aspnetcoremvcformatter.tests.dll" id="f3d2854e-ecd1-ba76-e291-7463583e140f">
+      <Execution id="a6d80fd8-d381-422e-9201-bc8e13aa8613" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest" name="LZ4MessagePackFormatter" />
+    </UnitTest>
+    <UnitTest name="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest.MessagePackFormatter" storage="/users/os/junction26-messagepack-csharp/bin/messagepack.aspnetcoremvcformatter.tests/debug/net8.0/messagepack.aspnetcoremvcformatter.tests.dll" id="93fd9105-11ea-9070-00eb-5cee57ef1855">
+      <Execution id="4d558437-c038-4923-8ceb-a5b351f0c3fc" />
+      <TestMethod codeBase="/Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="MessagePack.Tests.ExtensionTests.AspNetCoreMvcFormatterTest" name="MessagePackFormatter" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1e9639c2-eb38-1cde-34e7-a1899003dbaa" executionId="2552b74a-7332-45a1-bdbc-e70b899d547d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93fd9105-11ea-9070-00eb-5cee57ef1855" executionId="4d558437-c038-4923-8ceb-a5b351f0c3fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a6682bd-cc10-53d8-e357-a98b1fdff61f" executionId="2011d180-f9f4-423f-9b67-4acbd953bf51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3d2854e-ecd1-ba76-e291-7463583e140f" executionId="a6d80fd8-d381-422e-9201-bc8e13aa8613" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0e6a00ba-8710-1467-fb64-818a9dc41fdb" executionId="179eede1-04e9-40e3-a402-0613630ca0cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afd000e1-e2dd-c46a-d990-2b3a98e368d2" executionId="f5d91bbf-987b-4298-9701-210d51207a95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.34)
+[xUnit.net 00:00:00.16]   Discovering: MessagePack.AspNetCoreMvcFormatter.Tests
+[xUnit.net 00:00:00.29]   Discovered:  MessagePack.AspNetCoreMvcFormatter.Tests
+[xUnit.net 00:00:00.29]   Starting:    MessagePack.AspNetCoreMvcFormatter.Tests
+[xUnit.net 00:00:00.79]   Finished:    MessagePack.AspNetCoreMvcFormatter.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

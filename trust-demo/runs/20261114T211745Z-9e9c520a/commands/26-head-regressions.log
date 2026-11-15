@@ -1,0 +1,15 @@
+
+Test run for /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/head/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.2 (arm64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /Users/os/junction26-messagepack-csharp/trust-demo/runs/20261114T211745Z-9e9c520a/head/results/targeted.trx
+
+Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 74 ms - MessagePack.SourceGenerator.Tests.dll (net8.0)
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.04

@@ -1,0 +1,86 @@
+
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.Tests/Debug/net8.0/MessagePack.Tests.dll (.NETCoreApp,Version=v8.0)
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.AspNetCoreMvcFormatter.Tests/Debug/net8.0/MessagePack.AspNetCoreMvcFormatter.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.2 (arm64)
+
+VSTest version 17.11.2 (arm64)
+
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.Internal.Tests/Debug/net8.0/MessagePack.Internal.Tests.dll (.NETCoreApp,Version=v8.0)
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.Tests/Debug/net8.0/MessagePack.SourceGenerator.Tests.dll (.NETCoreApp,Version=v8.0)
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Starting test execution, please wait...
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.GeneratedCode.Tests/Debug/net8.0/MessagePack.GeneratedCode.Tests.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+VSTest version 17.11.2 (arm64)
+
+VSTest version 17.11.2 (arm64)
+
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.ExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.ExecutionTests.dll (.NETCoreApp,Version=v8.0)
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.SourceGenerator.MapModeExecutionTests/Debug/net8.0/MessagePack.SourceGenerator.MapModeExecutionTests.dll (.NETCoreApp,Version=v8.0)
+Test run for /Users/os/junction26-messagepack-csharp/bin/MessagePack.Experimental.Tests/Debug/net8.0/MessagePack.Experimental.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.2 (arm64)
+
+Starting test execution, please wait...
+Starting test execution, please wait...
+VSTest version 17.11.2 (arm64)
+
+VSTest version 17.11.2 (arm64)
+
+VSTest version 17.11.2 (arm64)
+
+A total of 1 test files matched the specified pattern.
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Starting test execution, please wait...
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+A total of 1 test files matched the specified pattern.
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42.trx
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 63 ms - MessagePack.SourceGenerator.ExecutionTests.dll (net8.0)
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[1].trx
+
+Passed!  - Failed:     0, Passed:    11, Skipped:     0, Total:    11, Duration: 56 ms - MessagePack.GeneratedCode.Tests.dll (net8.0)
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[2].trx
+
+Passed!  - Failed:     0, Passed:    20, Skipped:     0, Total:    20, Duration: 57 ms - MessagePack.SourceGenerator.MapModeExecutionTests.dll (net8.0)
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[3].trx
+
+Passed!  - Failed:     0, Passed:    95, Skipped:     0, Total:    95, Duration: 319 ms - MessagePack.Experimental.Tests.dll (net8.0)
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_42[4].trx
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 373 ms - MessagePack.AspNetCoreMvcFormatter.Tests.dll (net8.0)
+[xUnit.net 00:00:01.56] MessagePack.Tests: Skipping test case with duplicate ID '786f6f4a18c7413be8d62e31bb90362c1309c075' ('MessagePack.Tests.EnumAsStringIgnoreCaseTests.EnumTestEnumMember<AsStringWithEnumMember>(x: 10, y: 999, xName: "10", yName: "999", ignoreCase: True)' and 'MessagePack.Tests.EnumAsStringIgnoreCaseTests.EnumTestEnumMember<AsStringWithEnumMember>(x: 10, y: 999, xName: "10", yName: "999", ignoreCase: True)')
+[xUnit.net 00:00:01.56] MessagePack.Tests: Skipping test case with duplicate ID '7049ea809b2bc909c4d60c10a13ac8f978d021c4' ('MessagePack.Tests.EnumAsStringIgnoreCaseTests.EnumTestEnumMember<AsStringWithEnumMember>(x: 10, y: 999, xName: "10", yName: "999", ignoreCase: False)' and 'MessagePack.Tests.EnumAsStringIgnoreCaseTests.EnumTestEnumMember<AsStringWithEnumMember>(x: 10, y: 999, xName: "10", yName: "999", ignoreCase: False)')
+[xUnit.net 00:00:01.56] MessagePack.Tests: Skipping test case with duplicate ID '22bacb145e315e5c845d31c67fa0d2e29962ff93' ('MessagePack.Tests.EnumAsStringTest.EnumTestEnumMember<AsStringWithEnumMember>(x: 10, y: 999, xName: "10", yName: "999")' and 'MessagePack.Tests.EnumAsStringTest.EnumTestEnumMember<AsStringWithEnumMember>(x: 10, y: 999, xName: "10", yName: "999")')
+[xUnit.net 00:00:01.58]     MessagePack.Tests.UnionResolverTest.ConcreteClassUnion [SKIP]
+  Skipped MessagePack.Tests.UnionResolverTest.ConcreteClassUnion [1 ms]
+[xUnit.net 00:00:01.62]     MessagePackSerializerTypelessTests.GuidShouldBeDeserializedAsGuid [SKIP]
+  Skipped MessagePackSerializerTypelessTests.GuidShouldBeDeserializedAsGuid [1 ms]
+[xUnit.net 00:00:01.66]     MessagePackSerializerTypelessTests.DecimalShouldBeDeserializedAsDecimal [SKIP]
+  Skipped MessagePackSerializerTypelessTests.DecimalShouldBeDeserializedAsDecimal [1 ms]
+[xUnit.net 00:00:01.69]     MessagePack.Tests.ExtensionTests.ReactivePropertyTest.MiscTest [SKIP]
+[xUnit.net 00:00:01.69]     MessagePack.Tests.ExtensionTests.ReactivePropertyTest.ViewModelTest [SKIP]
+  Skipped MessagePack.Tests.ExtensionTests.ReactivePropertyTest.MiscTest [1 ms]
+  Skipped MessagePack.Tests.ExtensionTests.ReactivePropertyTest.ViewModelTest [1 ms]
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_43.trx
+
+Passed!  - Failed:     0, Passed:   291, Skipped:     0, Total:   291, Duration: 191 ms - MessagePack.Internal.Tests.dll (net8.0)
+[xUnit.net 00:00:01.74]     MessagePack.Tests.UnionResolverTest.IL2CPPHint [SKIP]
+  Skipped MessagePack.Tests.UnionResolverTest.IL2CPPHint [1 ms]
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_23_43[1].trx
+
+Passed!  - Failed:     0, Passed:   985, Skipped:     6, Total:   991, Duration: 1 s - MessagePack.Tests.dll (net8.0)
+Results File: /Users/os/junction26-messagepack-csharp/evidence/setup/new/test-results/_test-host_2026-11-14_22_24_06.trx
+
+Passed!  - Failed:     0, Passed:   170, Skipped:     0, Total:   170, Duration: 7 s - MessagePack.SourceGenerator.Tests.dll (net8.0)
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:34.07

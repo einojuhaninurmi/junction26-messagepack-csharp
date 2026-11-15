@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Issue #2283 — Earned Trust review</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<a class="skip-link" href="#findings">Skip to review</a>
+<header class="app-header"><a href="#top" class="brand">Earned Trust</a><span>Recorded code review</span></header>
+<main id="top">
+<p id="loading" role="status">Loading recorded assessment…</p><div id="fatal" role="alert" hidden></div>
+<div id="content" hidden>
+<div class="review-header"><div><div class="issue-label">MessagePack-CSharp / Issue #2283</div><h1 id="title"></h1></div><div class="status-panel"><strong id="decision-status">Pending human review</strong><span id="save-context">No decision saved for this review.</span></div></div>
+<div class="notice"><strong>Saved example assessment. New AI reviews are separate below.</strong> <span id="provenance"></span><p>Successful head checks used the separate Roslyn 4.11.0 setup correction. The original branch does not build unchanged.</p></div>
+<div class="workspace">
+<div class="review-body">
+<section id="findings" aria-labelledby="finding-title"><div class="section-label">Finding F1 · Confirmed diagnostic gap</div><h2 id="finding-title"></h2><p class="finding-intro">The metadata crash is fixed in the tested cases. A source diagnostic remains missing.</p>
+<pre><code id="example"></code></pre>
+<div class="observations"><div><h3>Base: analyzer crashes</h3><p id="finding-base"></p></div><div><h3>Head: diagnostic missing</h3><p id="finding-head"></p></div></div>
+<p id="finding-control"></p><p class="qualification">The base was already broken. This is not a demonstrated regression from previously correct behavior; no runtime data loss is established.</p><div id="finding-links" class="links"></div>
+<details><summary>Diagnostic path and source references</summary><p id="finding-cause"></p><div id="source-links" class="links"></div></details></section>
+<section id="collected-evidence" aria-labelledby="collected-heading"><h2 id="collected-heading">Reproducible evidence runs</h2><p class="section-note">Command execution only, not a new AI assessment. The recorded review above remains unchanged. Each run has its own report version and decision binding.</p><p id="run-loading" role="status">Loading saved runs…</p><p id="run-load-error" role="alert" hidden></p><label for="run-select">Collected run</label><select id="run-select" hidden></select><div id="collected-result"></div><button type="button" class="secondary" id="use-run" hidden>Use selected run as decision scope</button></section>
+<section id="ai-review" aria-labelledby="ai-heading"><h2 id="ai-heading">New AI code review</h2><p class="section-note">Uses the selected evidence run above, the original requirement and frozen code. Separate from the saved example assessment. Tests and probe sources can reveal defects: this is evidence-assisted review, not a blind test.</p><p id="ai-config" role="status">Checking model-service configuration…</p><button id="prepare-ai" class="secondary" type="button" hidden>Check tokens &amp; cost (no generation)</button><p id="ai-cost" role="status"></p><button id="run-ai" type="button">Run AI review</button><p id="ai-status" role="status" aria-live="polite"></p><div id="ai-history"></div></section>
+<section id="requirement"><h2>Requirement</h2><p id="requirement-text"></p><a id="issue-link" target="_blank" rel="noopener"></a></section>
+<section id="evidence"><h2>Acceptance criteria</h2><p class="section-note">Recorded observations are scoped evidence, not approval of the change.</p><div class="table-wrap"><table><caption class="sr-only">Requirements, recorded results, evidence and limitations</caption><thead><tr><th scope="col">Requirement</th><th scope="col">Observed result</th><th scope="col">Evidence</th><th scope="col">Limitation</th></tr></thead><tbody id="evidence-map"></tbody></table></div></section>
+<section id="limits"><h2>Limits to consider before deciding</h2><p class="section-note">Coverage limits and environment qualifications are not automatically product defects.</p><ul id="limit-cards" class="limits-list"></ul></section>
+<div class="technical-sections">
+<details id="technical"><summary>Change scope and full commit identifiers</summary><div id="change"><p id="change-summary"></p><dl class="sha-grid"><div><dt>Base · parent commit</dt><dd><code id="base"></code></dd></div><div><dt>Head · evaluated change</dt><dd><code id="head"></code></dd></div></dl><ul id="scope" class="file-list"></ul><p id="excluded" class="qualification"></p><p id="original-env" class="muted"></p><div id="change-links" class="links"></div></div></details>
+<details><summary>Recorded runs and environment details</summary><div id="runs"></div></details>
+<details><summary>Concept card · review method and responsibility</summary><article id="concept"></article></details>
+<details><summary>Lessons log · known failure modes</summary><div id="lessons"></div></details>
+</div>
+</div>
+<aside id="decision" aria-labelledby="decision-heading"><h2 id="decision-heading">Human decision</h2><div class="decision-limits"><strong>Before deciding</strong><p>F1 remains unresolved. Runtime round-trip, Windows and NativeAOT are unverified; 6 tests were skipped. <a href="#limits">Review limits</a></p></div>
+<p id="decision-scope" class="field-note">Decision scope: original recorded AI assessment.</p><button type="button" id="original-scope" class="secondary" hidden>Return to original assessment</button>
+<form id="decision-form"><label for="owner">Responsible person</label><input id="owner" name="owner" maxlength="160" autocomplete="off" required aria-describedby="identity-note"><p id="identity-note" class="field-note">Self-declared name. Not verified identity or GitHub approval.</p>
+<label for="verdict">Decision</label><select id="verdict" name="verdict" required><option value="">Select a decision…</option><option value="accept">Accept</option><option value="request_changes">Request changes</option><option value="defer">Defer</option></select>
+<label for="rationale">Rationale</label><textarea id="rationale" name="rationale" rows="3" maxlength="5000" required></textarea>
+<div id="risk-group"><label for="risk">Acceptable residual risk</label><p id="acceptance-note" class="field-note" hidden>Acceptance includes the unresolved diagnostic gap and unverified runtime, Windows and NativeAOT behavior. State explicitly which risks you accept.</p><textarea id="risk" name="risk" rows="3" maxlength="5000" required aria-describedby="acceptance-note" placeholder="State accepted risk, or why none is accepted yet."></textarea><label id="risk-confirmation" class="checkbox-label" hidden><input type="checkbox" id="risk-ack">I explicitly accept the residual risk described above.</label></div>
+<div class="actions"><button type="submit">Record decision</button><button type="button" id="export" class="secondary" disabled>Export saved JSON</button></div><p id="decision-message" role="status" aria-live="polite"></p><p id="dirty" class="field-note" hidden>Unsaved edits. Export contains the last saved decision.</p>
+</form><p class="storage-note">Stored in this browser at this origin. Export to retain a copy; clearing browser data removes it. No remote approval is submitted.</p><details class="decision-binding"><summary>Decision binding</summary><p id="binding"></p></details></aside>
+</div>
+<footer><span>Earned Trust · local reference demo</span><div id="footer-links" class="links"></div></footer>
+</div></main></body></html>

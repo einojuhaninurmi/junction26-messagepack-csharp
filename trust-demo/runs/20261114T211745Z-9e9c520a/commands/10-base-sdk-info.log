@@ -1,0 +1,43 @@
+.NET SDK:
+ Version:           8.0.428
+ Commit:            742a7a66c3
+ Workload version:  8.0.400-manifests.a830daf1
+ MSBuild version:   17.11.71+2613e0705
+
+Runtime Environment:
+ OS Name:     Mac OS X
+ OS Version:  26.5
+ OS Platform: Darwin
+ RID:         osx-arm64
+ Base Path:   /usr/local/share/dotnet/sdk/8.0.428/
+
+.NET workloads installed:
+Configured to use loose manifests when installing new manifests.
+There are no installed workloads to display.
+
+Host:
+  Version:      8.0.34
+  Architecture: arm64
+  Commit:       b455eab3a0
+
+.NET SDKs installed:
+  8.0.428 [/usr/local/share/dotnet/sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.34 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.34 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+
+Other architectures found:
+  None
+
+Environment variables:
+  Not set
+
+global.json file:
+  /private/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-4re5roli/base/global.json
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download

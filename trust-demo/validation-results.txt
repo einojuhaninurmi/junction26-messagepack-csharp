@@ -1,0 +1,10 @@
+test_report_and_references (__main__.ReportTests.test_report_and_references) ... ok
+test_required_field (__main__.ReportTests.test_required_field) ... ok
+test_sha_format (__main__.ReportTests.test_sha_format) ... ok
+test_unknown_field (__main__.ReportTests.test_unknown_field) ... ok
+test_wrong_type (__main__.ReportTests.test_wrong_type) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK

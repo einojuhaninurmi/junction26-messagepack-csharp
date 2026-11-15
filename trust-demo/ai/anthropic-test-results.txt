@@ -1,0 +1,24 @@
+test_context_overflow_never_generates (__main__.AdapterTests.test_context_overflow_never_generates) ... ok
+test_cost_limit_never_generates (__main__.AdapterTests.test_cost_limit_never_generates) ... ok
+test_count_payload_matches_generation_input (__main__.AdapterTests.test_count_payload_matches_generation_input) ... ok
+test_invalid_token_count_and_missing_capabilities_fail_closed (__main__.AdapterTests.test_invalid_token_count_and_missing_capabilities_fail_closed) ... ok
+test_model_and_usage_ids_preserved_without_thinking_text (__main__.AdapterTests.test_model_and_usage_ids_preserved_without_thinking_text) ... ok
+test_payload_separates_policy_data_and_has_no_capabilities (__main__.AdapterTests.test_payload_separates_policy_data_and_has_no_capabilities) ... ok
+test_preflight_only_checks_model_and_counts_tokens (__main__.AdapterTests.test_preflight_only_checks_model_and_counts_tokens) ... ok
+test_real_transport_uses_fixed_origin_auth_version_and_one_attempt (__main__.AdapterTests.test_real_transport_uses_fixed_origin_auth_version_and_one_attempt) ... ok
+test_tool_response_never_executed (__main__.AdapterTests.test_tool_response_never_executed) ... ok
+test_unavailable_model_and_http_failure_never_retry (__main__.AdapterTests.test_unavailable_model_and_http_failure_never_retry) ... ok
+test_unsupported_constraints_removed_but_original_schema_unchanged (__main__.AdapterTests.test_unsupported_constraints_removed_but_original_schema_unchanged) ... ok
+test_hidden_input_is_only_passed_in_server_env_not_shell_or_args (__main__.LauncherTests.test_hidden_input_is_only_passed_in_server_env_not_shell_or_args) ... ok
+test_changed_key_or_input_invalidates_quote (__main__.ServiceTests.test_changed_key_or_input_invalidates_quote) ... ok
+test_expired_quote_is_not_replayed (__main__.ServiceTests.test_expired_quote_is_not_replayed) ... ok
+test_no_quote_means_no_network_or_paid_request (__main__.ServiceTests.test_no_quote_means_no_network_or_paid_request) ... ok
+test_one_quote_one_paid_call_and_no_known_finding_is_accepted (__main__.ServiceTests.test_one_quote_one_paid_call_and_no_known_finding_is_accepted) ... ok
+test_truncation_refusal_and_bad_json_record_usage_not_success (__main__.ServiceTests.test_truncation_refusal_and_bad_json_record_usage_not_success) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.943s
+
+OK
+Direct Anthropic only. Model claude-sonnet-5-5; 8,192 output tokens; 300s deadline; no retries.
+The UI counts tokens and shows cost before one paid generation. No model call is made at startup.

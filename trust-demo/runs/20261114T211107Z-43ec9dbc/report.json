@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "kind": "issue-2283-evidence-run",
+  "runId": "20261114T211107Z-43ec9dbc",
+  "startedAt": "2026-11-14T21:11:07.090926+00:00",
+  "finishedAt": "2026-11-14T21:11:07.681381+00:00",
+  "base": "32258fdbee4bcd653c79f51b4376b5103c6f4d27",
+  "head": "9df83c38409c8bfad0517aebffe48211eda4a5b4",
+  "parentReviewVersion": "2283-review-1",
+  "reviewVersion": "2283-review-1+run.20261114T211107Z-43ec9dbc",
+  "checkVersion": "2283-checks-1",
+  "status": "environment_blocked",
+  "commands": [
+    {
+      "id": "01-git-version",
+      "argv": [
+        "git",
+        "--version"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.117007+00:00",
+      "finishedAt": "2026-11-14T21:11:07.129080+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/01-git-version.log"
+    },
+    {
+      "id": "02-base-resolve",
+      "argv": [
+        "git",
+        "rev-parse",
+        "32258fdbee4bcd653c79f51b4376b5103c6f4d27^{commit}"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.129364+00:00",
+      "finishedAt": "2026-11-14T21:11:07.142315+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/02-base-resolve.log"
+    },
+    {
+      "id": "03-head-resolve",
+      "argv": [
+        "git",
+        "rev-parse",
+        "9df83c38409c8bfad0517aebffe48211eda4a5b4^{commit}"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.142517+00:00",
+      "finishedAt": "2026-11-14T21:11:07.151223+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/03-head-resolve.log"
+    },
+    {
+      "id": "04-parent-check",
+      "argv": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "32258fdbee4bcd653c79f51b4376b5103c6f4d27",
+        "9df83c38409c8bfad0517aebffe48211eda4a5b4"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.151415+00:00",
+      "finishedAt": "2026-11-14T21:11:07.161195+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/04-parent-check.log"
+    },
+    {
+      "id": "05-test-source",
+      "argv": [
+        "git",
+        "show",
+        "9df83c38409c8bfad0517aebffe48211eda4a5b4:tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.161348+00:00",
+      "finishedAt": "2026-11-14T21:11:07.171064+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/05-test-source.log"
+    },
+    {
+      "id": "06-base-worktree-add",
+      "argv": [
+        "git",
+        "worktree",
+        "add",
+        "--detach",
+        "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/base",
+        "32258fdbee4bcd653c79f51b4376b5103c6f4d27"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.172006+00:00",
+      "finishedAt": "2026-11-14T21:11:07.332328+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/06-base-worktree-add.log"
+    },
+    {
+      "id": "07-base-commit",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/base",
+      "startedAt": "2026-11-14T21:11:07.332600+00:00",
+      "finishedAt": "2026-11-14T21:11:07.342341+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/07-base-commit.log"
+    },
+    {
+      "id": "08-base-setup-diff",
+      "argv": [
+        "git",
+        "diff",
+        "--",
+        "Directory.Packages.props"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/base",
+      "startedAt": "2026-11-14T21:11:07.342767+00:00",
+      "finishedAt": "2026-11-14T21:11:07.353701+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/08-base-setup-diff.log"
+    },
+    {
+      "id": "09-base-test-diff",
+      "argv": [
+        "git",
+        "diff",
+        "--",
+        "tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/base",
+      "startedAt": "2026-11-14T21:11:07.354033+00:00",
+      "finishedAt": "2026-11-14T21:11:07.363837+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/09-base-test-diff.log"
+    },
+    {
+      "id": "10-base-sdk-info",
+      "argv": [
+        "/missing-earned-trust-dotnet",
+        "--info"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/base",
+      "startedAt": "2026-11-14T21:11:07.364194+00:00",
+      "finishedAt": "2026-11-14T21:11:07.365027+00:00",
+      "exitCode": null,
+      "status": "environment_blocked",
+      "log": "commands/10-base-sdk-info.log",
+      "executionError": "[Errno 2] No such file or directory: '/missing-earned-trust-dotnet'"
+    },
+    {
+      "id": "11-head-worktree-add",
+      "argv": [
+        "git",
+        "worktree",
+        "add",
+        "--detach",
+        "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/head",
+        "9df83c38409c8bfad0517aebffe48211eda4a5b4"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.365202+00:00",
+      "finishedAt": "2026-11-14T21:11:07.502540+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/11-head-worktree-add.log"
+    },
+    {
+      "id": "12-head-commit",
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/head",
+      "startedAt": "2026-11-14T21:11:07.502788+00:00",
+      "finishedAt": "2026-11-14T21:11:07.512603+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/12-head-commit.log"
+    },
+    {
+      "id": "13-head-setup-diff",
+      "argv": [
+        "git",
+        "diff",
+        "--",
+        "Directory.Packages.props"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/head",
+      "startedAt": "2026-11-14T21:11:07.513208+00:00",
+      "finishedAt": "2026-11-14T21:11:07.523059+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/13-head-setup-diff.log"
+    },
+    {
+      "id": "14-head-test-diff",
+      "argv": [
+        "git",
+        "diff",
+        "--",
+        "tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/head",
+      "startedAt": "2026-11-14T21:11:07.523402+00:00",
+      "finishedAt": "2026-11-14T21:11:07.532847+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/14-head-test-diff.log"
+    },
+    {
+      "id": "15-head-sdk-info",
+      "argv": [
+        "/missing-earned-trust-dotnet",
+        "--info"
+      ],
+      "cwd": "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/head",
+      "startedAt": "2026-11-14T21:11:07.533132+00:00",
+      "finishedAt": "2026-11-14T21:11:07.533956+00:00",
+      "exitCode": null,
+      "status": "environment_blocked",
+      "log": "commands/15-head-sdk-info.log",
+      "executionError": "[Errno 2] No such file or directory: '/missing-earned-trust-dotnet'"
+    },
+    {
+      "id": "16-cleanup-base",
+      "argv": [
+        "git",
+        "worktree",
+        "remove",
+        "--force",
+        "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/base"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.534153+00:00",
+      "finishedAt": "2026-11-14T21:11:07.607395+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/16-cleanup-base.log"
+    },
+    {
+      "id": "17-cleanup-head",
+      "argv": [
+        "git",
+        "worktree",
+        "remove",
+        "--force",
+        "/var/folders/ph/2q90r9h1543_7z0ynhy2ksjc0000gn/T/earned-trust-2283-f1q597r6/head"
+      ],
+      "cwd": "/Users/os/junction26-messagepack-csharp",
+      "startedAt": "2026-11-14T21:11:07.607590+00:00",
+      "finishedAt": "2026-11-14T21:11:07.681054+00:00",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "commands/17-cleanup-head.log"
+    }
+  ],
+  "versions": {
+    "base": {
+      "commit": "32258fdbee4bcd653c79f51b4376b5103c6f4d27",
+      "checks": {
+        "metadata-regressions-v1": {
+          "status": "not_run",
+          "reason": "Not executed: base-sdk-info failed: see commands/10-base-sdk-info.log",
+          "commandIds": []
+        },
+        "diagnostic-probe-v1": {
+          "status": "not_run",
+          "reason": "Not executed: base-sdk-info failed: see commands/10-base-sdk-info.log",
+          "commandIds": []
+        }
+      },
+      "inputHashes": {
+        "testFile": "7a982892d835a6c3a2883c417248b005e2738d1ef62e0bf732bc4bdee47dcebe",
+        "probeSource": "7f93073329a6a69d8975975b5f145fdc62ab6a19326a0a08e4d67ccdd501a829",
+        "setupPatch": "06aabc4cc08c503d4a6a185836ac361fe95be10ee75945741d5a49bff0a735d9"
+      },
+      "environmentError": "base-sdk-info failed: see commands/10-base-sdk-info.log"
+    },
+    "head": {
+      "commit": "9df83c38409c8bfad0517aebffe48211eda4a5b4",
+      "checks": {
+        "metadata-regressions-v1": {
+          "status": "not_run",
+          "reason": "Not executed: head-sdk-info failed: see commands/15-head-sdk-info.log",
+          "commandIds": []
+        },
+        "diagnostic-probe-v1": {
+          "status": "not_run",
+          "reason": "Not executed: head-sdk-info failed: see commands/15-head-sdk-info.log",
+          "commandIds": []
+        }
+      },
+      "inputHashes": {
+        "testFile": "7a982892d835a6c3a2883c417248b005e2738d1ef62e0bf732bc4bdee47dcebe",
+        "probeSource": "7f93073329a6a69d8975975b5f145fdc62ab6a19326a0a08e4d67ccdd501a829",
+        "setupPatch": "06aabc4cc08c503d4a6a185836ac361fe95be10ee75945741d5a49bff0a735d9"
+      },
+      "environmentError": "head-sdk-info failed: see commands/15-head-sdk-info.log"
+    }
+  },
+  "artifacts": [
+    "inputs/checks.json",
+    "inputs/Probe.cs",
+    "inputs/collector.py",
+    "inputs/run_contract.py",
+    "commands/01-git-version.log",
+    "commands/02-base-resolve.log",
+    "commands/03-head-resolve.log",
+    "commands/04-parent-check.log",
+    "commands/05-test-source.log",
+    "inputs/GenericsFormatterTests.cs",
+    "commands/06-base-worktree-add.log",
+    "commands/07-base-commit.log",
+    "commands/08-base-setup-diff.log",
+    "base/setup.patch",
+    "commands/09-base-test-diff.log",
+    "base/test-overlay.patch",
+    "commands/10-base-sdk-info.log",
+    "commands/11-head-worktree-add.log",
+    "commands/12-head-commit.log",
+    "commands/13-head-setup-diff.log",
+    "head/setup.patch",
+    "commands/14-head-test-diff.log",
+    "head/test-overlay.patch",
+    "commands/15-head-sdk-info.log",
+    "commands/16-cleanup-base.log",
+    "commands/17-cleanup-head.log"
+  ],
+  "contradictions": [],
+  "inputs": {
+    "testSourceCommit": "9df83c38409c8bfad0517aebffe48211eda4a5b4",
+    "testFileSha256": "7a982892d835a6c3a2883c417248b005e2738d1ef62e0bf732bc4bdee47dcebe",
+    "probeSha256": "7f93073329a6a69d8975975b5f145fdc62ab6a19326a0a08e4d67ccdd501a829",
+    "manifestSha256": "ba17ecf1c1693b7be68eb651d3be76645aa7bd157a5d3cfe993f96357fca6daa",
+    "setupChange": "Only IsAnalyzerProject conditional MicrosoftCodeAnalysisVersion: 4.12.0 -> 4.11.0",
+    "identicalAcrossVersions": false
+  },
+  "tools": {
+    "python": "3.12.5 (v3.12.5:ff3bc82f7c9, Aug  7 2024, 05:32:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit"
+  },
+  "limits": [
+    "Targeted regressions and diagnostic probe only; no full solution suite, runtime round-trip, Windows or NativeAOT validation.",
+    "Both sides require the separate conditional Roslyn 4.11.0 correction.",
+    "Base uses the head test-file overlay. This is not an untouched-base build.",
+    "No AI assessment or human approval is performed."
+  ]
+}

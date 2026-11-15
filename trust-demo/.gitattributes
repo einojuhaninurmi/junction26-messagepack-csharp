@@ -1,0 +1,4 @@
+# Immutable evidence snapshots must survive checkout without newline conversion.
+runs/** -text
+ai-reviews/** -text
+design-evidence/** -text

@@ -1,0 +1,6 @@
+PASS: DESIGN desktop decision sidebar, semantic four-column table, mobile decision after content
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_chrome.py", line 120, in <module>
+    assert cdp.evaluate("document.getElementById('technical').open")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

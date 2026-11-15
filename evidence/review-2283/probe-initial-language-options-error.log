@@ -1,0 +1,12 @@
+Unhandled exception. System.ArgumentException: Inconsistent language versions (Parameter 'syntaxTrees')
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.CommonLanguageVersion(ImmutableArray`1 syntaxTrees)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation..ctor(String assemblyName, CSharpCompilationOptions options, ImmutableArray`1 references, CSharpCompilation previousSubmission, Type submissionReturnType, Type hostObjectType, Boolean isSubmission, ReferenceManager referenceManager, Boolean reuseReferenceManager, SyntaxAndDeclarationManager syntaxAndDeclarations, IReadOnlyDictionary`2 features, SemanticModelProvider semanticModelProvider, AsyncQueue`1 eventQueue)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation..ctor(String assemblyName, CSharpCompilationOptions options, ImmutableArray`1 references, CSharpCompilation previousSubmission, Type submissionReturnType, Type hostObjectType, Boolean isSubmission, ReferenceManager referenceManager, Boolean reuseReferenceManager, SyntaxAndDeclarationManager syntaxAndDeclarations, SemanticModelProvider semanticModelProvider, AsyncQueue`1 eventQueue)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.Update(ReferenceManager referenceManager, Boolean reuseReferenceManager, SyntaxAndDeclarationManager syntaxAndDeclarations)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.AddSyntaxTrees(IEnumerable`1 trees)
+   at Microsoft.CodeAnalysis.CSharp.CSharpCompilation.CommonAddSyntaxTrees(IEnumerable`1 trees)
+   at Microsoft.CodeAnalysis.Compilation.AddSyntaxTrees(IEnumerable`1 trees)
+   at Microsoft.CodeAnalysis.GeneratorDriver.RunGeneratorsAndUpdateCompilation(Compilation compilation, Compilation& outputCompilation, ImmutableArray`1& diagnostics, CancellationToken cancellationToken)
+   at Program.<<Main>$>g__Inspect|0_2(String name, CSharpCompilation compilation) in /private/tmp/ju26-review-2283-probe/Program.cs:line 20
+   at Program.<Main>$(String[] args) in /private/tmp/ju26-review-2283-probe/Program.cs:line 37
+   at Program.<Main>(String[] args)

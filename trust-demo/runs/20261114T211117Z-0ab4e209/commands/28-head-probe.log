@@ -1,0 +1,23 @@
+CASE referenced-library
+GENERATED MessagePack.GeneratedMessagePackResolver.g.cs
+GENERATED Formatters.MessagePack.GeneratedMessagePackResolver.Lib.ItemFormatter`1.g.cs
+EMIT True
+CASE issue-repro-with-implicit-resolver
+GENERATED MessagePack.GeneratedMessagePackResolver.g.cs
+GENERATED Formatters.MessagePack.GeneratedMessagePackResolver.App.CmdFormatter.g.cs
+GENERATED Formatters.MessagePack.GeneratedMessagePackResolver.Lib.ItemFormatter`1.g.cs
+EMIT True
+CASE source-unkeyed-control
+MsgPack004: Properties and fields of MessagePackObject-attributed types require either KeyAttribute or IgnoreMemberAttribute: global::Sample.Value
+GENERATED MessagePack.GeneratedMessagePackResolver.g.cs
+GENERATED Formatters.MessagePack.GeneratedMessagePackResolver.SampleFormatter.g.cs
+EMIT True
+CASE source-null-key-property
+MsgPack005: Both int and string keys are null: global::Sample.Value
+GENERATED MessagePack.GeneratedMessagePackResolver.g.cs
+GENERATED Formatters.MessagePack.GeneratedMessagePackResolver.SampleFormatter.g.cs
+EMIT True
+CASE source-null-key-positional-record
+GENERATED MessagePack.GeneratedMessagePackResolver.g.cs
+GENERATED Formatters.MessagePack.GeneratedMessagePackResolver.SampleFormatter.g.cs
+EMIT True

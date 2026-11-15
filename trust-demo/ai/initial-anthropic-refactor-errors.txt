@@ -1,0 +1,70 @@
+test_empty_provider_registry_is_not_configured (__main__.AITests.test_empty_provider_registry_is_not_configured) ... ok
+test_existing_reference_does_not_claim_truth (__main__.AITests.test_existing_reference_does_not_claim_truth) ... ok
+test_input_excludes_prior_assessment_and_comparison_summaries (__main__.AITests.test_input_excludes_prior_assessment_and_comparison_summaries) ... ok
+test_invalid_response_secret_and_tool_reply_never_succeed (__main__.AITests.test_invalid_response_secret_and_tool_reply_never_succeed) ... FAIL
+test_invalid_revision_and_range_are_unverified (__main__.AITests.test_invalid_revision_and_range_are_unverified) ... ok
+test_material_deterministic (__main__.AITests.test_material_deterministic) ... ok
+test_non_json_response_rejected (__main__.AITests.test_non_json_response_rejected) ... ok
+test_nonexistent_path_and_line_are_unverified (__main__.AITests.test_nonexistent_path_and_line_are_unverified) ... ok
+test_schema_rejects_approval (__main__.AITests.test_schema_rejects_approval) ... ok
+test_schema_rejects_confidence (__main__.AITests.test_schema_rejects_confidence) ... ok
+test_secret_in_material_is_neither_sent_nor_persisted (__main__.AITests.test_secret_in_material_is_neither_sent_nor_persisted) ... ok
+test_service_error_redacted_and_prior_record_preserved (__main__.AITests.test_service_error_redacted_and_prior_record_preserved) ... FAIL
+test_success_is_explicitly_a_test_double_and_has_provenance (__main__.AITests.test_success_is_explicitly_a_test_double_and_has_provenance) ... FAIL
+test_timeout_discards_late_reply (__main__.AITests.test_timeout_discards_late_reply) ... FAIL
+test_transport_timeout_maps_to_timeout_without_leaking_details (__main__.AITests.test_transport_timeout_maps_to_timeout_without_leaking_details) ... FAIL
+test_unknown_evidence_is_unverified_not_verified (__main__.AITests.test_unknown_evidence_is_unverified_not_verified) ... ok
+test_untrusted_prompt_injection_stays_in_data_only (__main__.AITests.test_untrusted_prompt_injection_stays_in_data_only) ... ok
+test_wrong_severity_and_bool_line_rejected (__main__.AITests.test_wrong_severity_and_bool_line_rejected) ... ok
+
+======================================================================
+FAIL: test_invalid_response_secret_and_tool_reply_never_succeed (__main__.AITests.test_invalid_response_secret_and_tool_reply_never_succeed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_ai.py", line 139, in test_invalid_response_secret_and_tool_reply_never_succeed
+    self.assertEqual(record['status'],'failed');self.assertEqual(record['error']['code'],'invalid_response')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'internal_error' != 'invalid_response'
+- internal_error
++ invalid_response
+
+
+======================================================================
+FAIL: test_service_error_redacted_and_prior_record_preserved (__main__.AITests.test_service_error_redacted_and_prior_record_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_ai.py", line 113, in test_service_error_redacted_and_prior_record_preserved
+    self.assertEqual(status,502);self.assertEqual(bad['error']['code'],'service_error')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 500 != 502
+
+======================================================================
+FAIL: test_success_is_explicitly_a_test_double_and_has_provenance (__main__.AITests.test_success_is_explicitly_a_test_double_and_has_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_ai.py", line 102, in test_success_is_explicitly_a_test_double_and_has_provenance
+    self.assertEqual(status,201);self.assertEqual(record['service'],'TEST-DOUBLE')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 500 != 201
+
+======================================================================
+FAIL: test_timeout_discards_late_reply (__main__.AITests.test_timeout_discards_late_reply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_ai.py", line 120, in test_timeout_discards_late_reply
+    self.assertEqual(status,504);self.assertEqual(record['status'],'failed')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 500 != 504
+
+======================================================================
+FAIL: test_transport_timeout_maps_to_timeout_without_leaking_details (__main__.AITests.test_transport_timeout_maps_to_timeout_without_leaking_details)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/os/junction26-messagepack-csharp/trust-demo/test_ai.py", line 130, in test_transport_timeout_maps_to_timeout_without_leaking_details
+    self.assertEqual(status,504)
+AssertionError: 500 != 504
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.014s
+
+FAILED (failures=5)
